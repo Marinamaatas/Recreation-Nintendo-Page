@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.iconSearch, .iconWish, .iconCart, .iconUser, .iconFlag {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#lupa {
+    margin-right: 5px;
+}
+
+#search, #dropdown, a:hover {
+    color: rgb(230, 0, 18);
+    box-sizing: border-box;
+}
+
+#dropdown, #search {
+    border: none;
+    outline: none;
+    align-items: center;
+}
+
+.lensSearch {
+    border-bottom: 1px black solid;
+    display: inline-flex;
+}
+
+i:hover {
+    color: rgb(230, 0, 18); 
+}
+
+#search {
+    text-decoration: none;
+}
+
+.iconGroup {
+    text-decoration: none;
+    float: right;
+}
+
+.logoNintendo {
+    width: 5%;
+    height: 5%;
+    padding-right: 10px;
+}
+
+a, #dropdown {
+    text-decoration: none;
+    color: rgb(72,72, 72);
+}
+
+.iconFlag {
+    width: 20px;
+    height: 20px;
+    padding-right: 15px;
+}
