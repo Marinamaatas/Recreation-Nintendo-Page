@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 262px;
+    height: 147.25px;
+}
+
+.descriptionTag{
+    border-radius: 1rem;
+    background-color: red;
+    color: white;
+}
+.featured1{
+    width: 262px;
+    overflow-x: scroll;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
