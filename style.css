@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -8,15 +9,19 @@ body {
     line-height: var(--line-text-font);
 }
 
-div {
+.header1 {
     border-bottom: 1px rgb(218, 218, 218);
+}
+
+.header1:hover {
+    border-bottom: 1px rgb(230, 0, 18);
 }
 
 #lupa {
     margin-right: 5px;
 }
 
-#dropdown:hover, a:hover {
+#dropdown:hover {
     color: rgb(230, 0, 18);
 }
 
@@ -38,10 +43,6 @@ div {
     color: rgb(230, 0, 18);
 }
 
-i:hover {
-    color: rgb(230, 0, 18); 
-}
-
 #search {
     text-decoration: none;
 }
@@ -49,7 +50,7 @@ i:hover {
 .logoNintendo {
     width: 100%;
     height: 100%;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 a, #dropdown {
@@ -58,11 +59,10 @@ a, #dropdown {
 }
 
 .iconFlag {
-    width: 20px;
-    height: 15px;
     padding-top: 5px;
     padding-right: 10px;
-    border-radius: 5px;
+    border-radius: 0.25rem;
+    overflow: hidden;
 }
 
 .logoNintendo {
@@ -88,15 +88,20 @@ a, #dropdown {
 
 .iconGroup {
     text-decoration: none;
-    display: inline;
+    display: inline-flex;
     float: right;
     padding-right: 10px;
 }
 
 .iconSupport, .iconSearch, .iconWish, .iconCart, .iconUser, .iconFlag {
-    padding-left: 15px;
+    margin-left: 25px;
     padding-top: 5px;
+    display: inline;
+    white-space: nowrap;
+    align-items: center;
 }
+
+
 
 #dropdown {
     font-family: var(--nintendo-font);
@@ -113,6 +118,12 @@ a, #dropdown {
 
 .header1 {
     border-bottom: 1px rgb(218, 218, 218) solid;
+    line-height: 0.2;
+    position: sticky;
+}
+
+.iconSupport:hover, .iconSearch:hover, .iconWish:hover, .iconCart:hover, .iconUser:hover {
+    color: rgb(230, 0, 18); 
 }
 
 .header2 {
@@ -135,4 +146,8 @@ a, #dropdown {
 
 .nintendoStar {
     width: 2%;
+}
+
+.navStyle {
+    display: block;
 }
