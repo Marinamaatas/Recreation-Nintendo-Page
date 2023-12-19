@@ -1,0 +1,52 @@
+body {
+  margin-inline: 30%;
+}
+
+#news {
+  text-align: left;
+  padding: 20px;
+
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filaUno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.filaDos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.item {
+  display: flex;
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+#NewsButton {
+  flex-direction: row;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+#NewsButton:hover {
+  background-color: #0056b3;
+}
