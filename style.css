@@ -1,27 +1,100 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
+    width: 100%;
     margin: 0;
     padding: 0;
+    font-family: var(--nintendo-font);
+    color: var(--color-font);
+    font-size: 16px;
+    line-height: var(--line-text-font);
+}
+
+.navStyle {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header1 {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 52px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    position: relative;
+    z-index: 100;
+}
+
+.leftBlock {
+    display: flex;
+    align-items: center;
+}
+
+.logoNintendo1 {
+    display: inline-flex;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.logoNintendo {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.logoNintendo {
+    width: 105px;
+    height: 52px;
+}
+
+.lensSearchDropdown {
+    border-bottom: 1px rgb(72, 72, 72) solid;
+    display: flex;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+
+.lensSearchDropdown:hover {
+    transition-delay: 200ms;
+    border-bottom: 1px rgb(230, 0, 18) solid;
+}
+
+.lensSearch:hover .lensIcon, .lensSearch:hover #search::placeholder {
+    transition-delay: 200ms;
+    color: rgb(230, 0, 18);
+}
+
+.lensSearch:hover #search::placeholder{
+    transition-delay: 200ms;
+    color: rgb(230, 0, 18);
+}
+
+.lensSearch {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    text-decoration: none;
+}
+
+#dropdown {
     font-family: var(--nintendo-font);
     color: var(--color-font);
     font-weight: var(--font-weight-nintendo);
     font-size: var(--font-size-text);
     line-height: var(--line-text-font);
-}
-
-.header1 {
-    border-bottom: 1px rgb(218, 218, 218);
-}
-
-.header1:hover {
-    border-bottom: 1px rgb(230, 0, 18);
-}
-
-#lupa {
-    margin-right: 5px;
+    text-decoration: none;
 }
 
 #dropdown:hover {
+    transition-delay: 200ms;
     color: rgb(230, 0, 18);
 }
 
@@ -31,99 +104,44 @@ body {
     align-items: center;
 }
 
-.lensSearch {
-    float: none;
-    border-bottom: 2px rgb(72, 72, 72) solid;
-    display: inline-flex;
-    padding-bottom: 5px;
-    margin-left: 10px;
-}
-
-.lensSearch:hover {
-    color: rgb(230, 0, 18);
-}
-
-#search {
-    text-decoration: none;
-}
-
-.logoNintendo {
-    width: 100%;
-    height: 100%;
-    margin-right: 10px;
-}
-
-a, #dropdown {
+a {
     text-decoration: none;
     color: rgb(72,72, 72);
 }
 
-.iconFlag {
-    padding-top: 5px;
-    padding-right: 10px;
-    border-radius: 0.25rem;
-    overflow: hidden;
-}
-
-.logoNintendo {
-    width: 105px;
-    height: 52px;
-}
-
-.leftBlock {
+.iconGroup {
     display: flex;
-    width: 100%;
     align-items: center;
+    gap: 1.75rem;
+    padding: 0px 1.25rem;
+}
+
+.supportList, .wishList, .cartList, .userList, .flagList {
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+}
+
+.iconSupport, .iconWish, .iconCart, .iconUser, .iconFlag {
+    display: flex;
+    align-items: center;
+}
+
+.supportIcon, .wishIcon, .cartIcon, .userIcon, .flagIcon {
     margin-right: 5px;
 }
 
-#dropdown {
-    color: rgb(72, 72, 72, 72);
+.supportList:hover, .wishList:hover, .cartList:hover, .userList:hover {
+    color: rgb(230, 0, 18);
 }
 
-.header1 {
-    display: flex;
-    align-items: center;
-}
-
-.iconGroup {
-    text-decoration: none;
-    display: inline-flex;
-    float: right;
-    padding-right: 10px;
-}
-
-.iconSupport, .iconSearch, .iconWish, .iconCart, .iconUser, .iconFlag {
-    margin-left: 25px;
+.iconSearch, .iconWish, .iconCart, .iconUser, .flagImg {
     padding-top: 5px;
     display: inline;
     white-space: nowrap;
     align-items: center;
-}
-
-
-
-#dropdown {
-    font-family: var(--nintendo-font);
-    color: var(--color-font);
-    font-weight: var(--font-weight-nintendo);
-    font-size: var(--font-size-text);
-    line-height: var(--line-text-font);
-}
-
-#search{
-    color: var(--color-font);
-    font-size: var(--font-size-text);
-}
-
-.header1 {
-    border-bottom: 1px rgb(218, 218, 218) solid;
-    line-height: 0.2;
-    position: sticky;
-}
-
-.iconSupport:hover, .iconSearch:hover, .iconWish:hover, .iconCart:hover, .iconUser:hover {
-    color: rgb(230, 0, 18); 
 }
 
 .header2 {
@@ -142,12 +160,4 @@ a, #dropdown {
 
 #mnStore, #hgGuide, #games1, #nintendoSwitch, #nAndE {
     margin-right: 25px;
-}
-
-.nintendoStar {
-    width: 2%;
-}
-
-.navStyle {
-    display: block;
 }
