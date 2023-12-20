@@ -1,7 +1,41 @@
+.HeadingNews {
+  font-family: "museo-sans", sans-serif;
+  color: rgb(72, 72, 72);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.4;
+  margin-inline: -1%;
+}
+
+.fechasNews {
+  font-weight: 300;
+  line-height: 2.35;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.newsTitle {
+  color: rgb(60, 60, 60);
+  font-family: "museo-sans", sans-serif;
+  min-height: 60px;
+}
+
 #news {
+  font-family: "museo-sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgb(72, 72, 72);
   text-align: left;
   padding: 10px;
-  margin-inline: 25%;
+  margin-inline: 20%;
+}
+
+.miniNews {
+  font-weight: bolder;
+  font-size: 15px;
+  min-height: 70px;
+  max-height: 70px;
+  overflow: hidden;
 }
 
 .wrapperNews {
@@ -10,9 +44,9 @@
 }
 
 .imgFilaUno {
-  height: 200px;
-  width: 400px;
-  border-radius: 20px;
+  height: 315px;
+  width: 555px;
+  border-radius: 15px;
 }
 
 .filaUno {
@@ -23,22 +57,26 @@
   justify-content: center;
   margin-bottom: 10px;
 }
-img{
-    overflow: hidden;
+img {
+  overflow: hidden;
 }
 
-#item-1{
-  margin-left: 1%;
-  margin-right: 1%;
+#item-1 {
+  margin-left: 0.5%;
+  margin-right: 0.5%;
 }
-#item-2{
+#item-2 {
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
 
-  margin-left: 1%;
-  margin-right: 1%;
+#item-3 #item-4 #item-5 #item-6 {
+  flex-direction: row;
 }
+
 .imgFilaDos {
-  height: 100px;
-  width: 150px;
+  height: 147px;
+  width: 262px;
   border-radius: 20px;
 }
 
@@ -49,33 +87,48 @@ img{
   justify-content: center;
   margin-bottom: 5%;
 }
-.newsLink{
-  color:#ff0000;
+.newsLink {
+  line-height: 2, 35;
+  color: #ff0000;
   font-weight: bolder;
+}
+.newsText {
+  min-height: 40px;
+  max-height: 40px;
+  overflow: hidden;
+  margin-bottom: 25px;
 }
 
 .item {
   display: flex;
   flex-grow: 1;
-  /* esto es para yo debuggear el tamaño de mis contenedores, no me peguen porfi :3 ♥
-  
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 15px; */
+  flex-direction: column;
+
   padding: 1%;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
 }
-  
+#svgNews {
+  transform: translate(-2px, 27.5%);
+}
 
 #NewsButton {
+  cursor:pointer;
   flex-direction: row;
   text-decoration: none;
+  letter-spacing: 1.2px;
+  font-weight: bolder;
   background-color: #ff0000;
+  display: inline-block;
   color: #fff;
   border-radius: 10px;
-  padding: 10px;
-  margin-left: 10px;
+  padding-top: 7.5px;
+  padding-bottom: 12.5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  margin-top: -1.25%;
+  margin-left: -1.5%;
 }
 
 #NewsButton:hover {
