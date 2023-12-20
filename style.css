@@ -20,10 +20,6 @@ svg {
     color: white;
 }
 
-/*}
-    display: inline;
-}*/
-
 img, svg {
     cursor: pointer;
 }
@@ -67,7 +63,7 @@ h2:hover, li:hover {
 
 li {
     font-size: 16px;
-    transition: 80ms;
+    transition: 75ms;
 }
 
 li:hover {
@@ -125,6 +121,10 @@ a {
     font-weight: bold;
 }
 
+.contact, .website, .terms, .docs {
+    transition: 75ms;
+}
+
 .contact:hover, .website:hover, .terms:hover, .docs:hover {
     border-bottom: 2px solid rgb(230, 0, 18);
 }
@@ -133,6 +133,7 @@ a {
     border-radius: 2px;
     border-color: white;
     cursor: pointer;
+    transition: 75ms;
 }
 
 b:hover {
