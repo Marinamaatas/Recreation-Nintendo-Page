@@ -10,3 +10,27 @@
     --font-size-text: 0.875rem;
     --line-text: 1.4;
   }
+
+  @media (min-width: 1025px) {
+    :root {
+      --border-radius-small: 0.75rem;
+      --border-radius: 1rem; 
+    }
+  
+    .navStyle {
+      display: block;
+    }
+
+    .lensSearchDropdownAll {
+      flex-basis: 28.125rem;
+    }
+
+    .lensSearchDropdown {
+      max-width: 28.125rem;
+      font-size: 0.875rem;
+    }
+
+    #dropdownHeader {
+      display: inline-block;
+    }
+  }
