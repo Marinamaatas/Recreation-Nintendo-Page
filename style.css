@@ -113,7 +113,7 @@ img {
 }
 
 #NewsButton {
-  cursor:pointer;
+  cursor: pointer;
   flex-direction: row;
   text-decoration: none;
   letter-spacing: 1.2px;
@@ -131,6 +131,21 @@ img {
   margin-left: -1.5%;
 }
 
+
 #NewsButton:hover {
-  background-color: #0056b3;
+  animation: pulse 0.3s 1 ease-out alternate;
+  background-color: #c80000;
+  transition: background-color 0.4s;
 }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scaleX(1.07) scaleY(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
