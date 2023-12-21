@@ -129,13 +129,14 @@ img {
   text-align: center;
   margin-top: -1.25%;
   margin-left: -1.5%;
+  transition: background-color 0.4s;
 }
 
 
 #NewsButton:hover {
   animation: pulse 0.3s 1 ease-out alternate;
+  animation-fill-mode: forwards;
   background-color: #c80000;
-  transition: background-color 0.4s;
 }
 @keyframes pulse {
   0% {
@@ -145,7 +146,7 @@ img {
     transform: scaleX(1.07) scaleY(1.02);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1.02);
   }
 }
 
