@@ -1,0 +1,218 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+:root { /*this works?? */
+    --border-radius: 0.75rem;
+}
+
+html style {
+    height: var(--app-height);
+}
+
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--nintendo-font);
+    font-size: 16px;
+    line-height: var(--line-text-font);
+    color: var(--color-font);
+    margin-left: 48px; /*this is not the solution because the margin left is adaptative*/
+}
+#bestSellersansNewReleases {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+#h1BestSeller, #h1NewReleases {
+    padding: 0px 16px 0px 0px;
+    border-right: 1px solid rgb(218, 218, 218);
+    border-right-width: 0.8px;
+    /*font-family: "museo-sans", sans-serif;
+    color: color-font;*/
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.4;
+    /*margin-inline: -1%;*/
+}
+.seeFullList {
+    line-height: 2, 35;
+    text-decoration: none;
+    color: #E60012;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 2px solid rgb(230, 0, 18);
+    transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+}
+#bestSellerCards, #newReleasesCards {
+    margin-right: 6rem;
+    justify-content: left;
+    display: flex;
+}
+
+.bestSellerCard, .newReleasesCard {
+    border-radius: 10px;
+    border: 1px solid rgb(218, 218, 218);
+    height: 316px;
+    width: 262px;
+    margin: 24px;
+    display: block;
+    cursor: pointer;
+}
+
+.imgCard {
+    width: 262px;
+    height: 147.25px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#headerBestSeller, #headerNewReleases {
+    align-items: center;
+    display: flex;
+    height: 37.8px;
+    width: 940.8px;
+}
+.titleBestSeller, .titleReleasesCard{
+    color: var(--color-font);
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+.titleBestSeller:hover, .titleReleasesCard:hover{
+    color: #e60012;
+    cursor: pointer;
+}
+
+.consoleReleasesCard, .consoleBestSeller {
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.separator {
+    display: block;
+    width: 2px;
+    margin-right: 6px;
+    height: 1rem;
+    background-color: rgb(230, 0, 18);
+}
+
+.textcard {
+    padding: 1rem 1rem;
+    position: relative; /*no se como esta esto*/
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+}
+
+.heart {
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+ }
+
+.sepCon {
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+.separator, .consoleBestSeller {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.separator, .consoleReleasesCard {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.labelReleasesCard{
+    border-radius: 1rem;
+    padding: 3px 7px 3px 7px;
+    background-color: #e60012;
+    font-size: 0.75rem;
+    color: white;
+    width: fit-content;
+}
+
+.dateBestSeller {
+    font-weight: 300;
+    line-height: 2.35;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 0.75rem;
+}
+
+.discountLabelReleasesCard {
+    padding: 3px 7px 3px 7px;
+    background-color: #e60012;
+    font-size: 0.75rem;
+    color: white;
+    width: fit-content;
+}
+
+#footnote {
+    font-size: 0.75rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.link {
+    line-height: 2, 35;
+    text-decoration: none;
+    color: #E60012;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 2px solid rgb(230, 0, 18);
+    transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+}
+
+
+/*
+#headerBestSeller, #headerNewReleases {
+    box-sizing: border-box;
+    align-items: center;
+    color: rgb(72, 72, 72);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    height: 37.8px;
+    line-height: 22.4px;
+    width: 940.8px;
+    -webkit-box-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+#h1BestSeller, #h1NewReleases {
+    margin-right: 1rem;
+    margin-bottom: 0px;
+    text-align: initial;
+    padding-right: 1rem;
+    border-right: 1px solid rgb(218, 218, 218);
+    border-right-color: rgb(218, 218, 218);
+border-right-style: solid;
+border-right-width: 0.8px;
+box-sizing: border-box;
+color: rgb(72, 72, 72);
+display: block;
+font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+font-size: 28px;
+font-weight: 700;
+height: 37.8px;
+letter-spacing: normal;
+line-height: 37.8px;
+margin-block-end: 0px;
+margin-block-start: 0px;
+margin-inline-end: 16px;
+margin-inline-start: 0px;
+margin: 0px 16px 0px 0px;
+padding: 0px 16px 0px 0px;
+text-align:;
+width: 255.5px;
+-webkit-font-smoothing: antialiased;
+} */
