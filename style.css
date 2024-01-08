@@ -150,3 +150,17 @@ img {
   }
 }
 
+.item:hover a,
+.item:hover h3,
+.item:hover > .miniNews{
+color:  #c80000;
+transition-timing-function: ease-in-out;
+}
+.item:hover img {
+  filter: brightness(75%);
+  transition: filter 200ms ease-in-out 25ms;
+    transition-property: filter;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 25ms;
+}
