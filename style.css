@@ -1,0 +1,38 @@
+
+body{
+    font-family: museo-sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+section{
+    background-image: url(TOTK_TGA_BG_1.png);
+    background-repeat:round;
+}
+
+.img-zelda{
+    margin-left: 60px;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 1400px;
+}
+
+
+.return{
+    display: flex;
+    margin-left: 60px;
+}
+
+.Learn{
+
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    padding-inline: 10px;
+    border: 0px;
+    border-radius: 10px;
+    margin-left: 30PX;
+}
+
+p{
+    color: gray;
+
+}
