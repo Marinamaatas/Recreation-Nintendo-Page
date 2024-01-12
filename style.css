@@ -1,10 +1,14 @@
+*{
+    margin: 0;
+}
 
 body{
     font-family: museo-sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
-section{
+.fondo{
     background-image: url(TOTK_TGA_BG_1.png);
-    background-repeat:round;
+    background-repeat: round;
+    height: 450px;
 }
 
 .img-zelda{
@@ -18,21 +22,56 @@ section{
 .return{
     display: flex;
     margin-left: 60px;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-right: 80px;
+}
+
+h2{
+    color:rgb(72, 72, 72);
+    vertical-align: baseline;
+    margin-top: 25px;
 }
 
 .Learn{
 
-    background-color: red;
+    background-color: rgb(230, 0, 18);
     color: white;
     text-decoration: none;
-    padding: 5px;
-    padding-inline: 10px;
-    border: 0px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0px 20px;
+    border: none;
     border-radius: 10px;
-    margin-left: 30PX;
+}
+
+.Learn:hover{
+    background-color: rgb(172, 0, 13);
+}
+
+.clasificacion{
+    cursor: pointer;
+    font-size: 12px;
 }
 
 p{
-    color: gray;
+    color: inherit;
+    text-align: right;
+}
 
+.botones{
+    display: inline-flex;
+    color: #484848;
+    align-content: center;
+}
+
+.pre-slide{
+    border-radius: 50%;
+}
+.play-slide{
+    border-radius: 50%;
+}
+.next-slide{
+    border-radius: 50%;
 }
