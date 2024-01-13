@@ -30,7 +30,8 @@ body{
 h2{
     color:rgb(72, 72, 72);
     vertical-align: baseline;
-    margin-top: 25px;
+    margin-top: 10px;
+    font-size: 26px;
 }
 
 .Learn{
@@ -41,37 +42,46 @@ h2{
     text-align: center;
     font-size: 18px;
     cursor: pointer;
-    padding: 0px 20px;
     border: none;
     border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    margin-left: -150px;
 }
 
 .Learn:hover{
-    background-color: rgb(172, 0, 13);
+    background-color: rgb(172, 0, 13); 
 }
 
 .clasificacion{
     cursor: pointer;
     font-size: 12px;
+    display: flex;
 }
 
 p{
     color: inherit;
-    text-align: right;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .botones{
     display: inline-flex;
     color: #484848;
-    align-content: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .pre-slide{
     border-radius: 50%;
+    cursor: pointer;
 }
 .play-slide{
     border-radius: 50%;
+    cursor: pointer;
 }
 .next-slide{
     border-radius: 50%;
+    cursor: pointer;
 }
