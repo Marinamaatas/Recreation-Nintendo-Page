@@ -1,3 +1,5 @@
+/* incluir un div con el precio y Nintendo Switch para conseguir que estén juntos
+poner un min height para cuando no tenga descuento y un max height para cuando si*/
 *, ::before, ::after {
     box-sizing: border-box;
 }
@@ -22,6 +24,7 @@ html, body {
 #bestSellersansNewReleases {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    margin: 0 auto;
 }
 #h1BestSeller, #h1NewReleases {
     padding: 0px 16px 0px 0px;
@@ -31,11 +34,11 @@ html, body {
     color: color-font;*/
     font-weight: 700;
     font-size: 28px;
-    line-height: 1.4;
+    /*line-height: 1.4;*/
     /*margin-inline: -1%;*/
 }
 .seeFullList {
-    line-height: 2, 35;
+    /*line-height: 2, 35;*/
     text-decoration: none;
     color: #E60012;
     cursor: pointer;
@@ -49,14 +52,15 @@ html, body {
     display: flex;
 }
 
-.bestSellerCard, .newReleasesCard {
+.bestSellerCard, .newReleasesCard { /*cambiar esto de max min*/
     border-radius: 10px;
     border: 1px solid rgb(218, 218, 218);
-    height: 316px;
+   /* height: 316px;*/
     width: 262px;
     margin: 24px;
     display: block;
     cursor: pointer;
+   /* max-height: 316px;*/
 }
 
 .imgCard {
@@ -74,7 +78,7 @@ html, body {
 }
 .titleBestSeller, .titleReleasesCard{
     color: var(--color-font);
-    margin-bottom: 16px;
+    
     text-decoration: none;
 }
 .titleBestSeller:hover, .titleReleasesCard:hover{
@@ -85,6 +89,7 @@ html, body {
 .consoleReleasesCard, .consoleBestSeller {
     font-size: 14px;
     font-size: 0.875rem;
+    font-family: var(--nintendo-font-search);
 }
 
 .separator {
@@ -97,13 +102,38 @@ html, body {
 
 .textcard {
     padding: 1rem 1rem;
-    position: relative; /*no se como esta esto*/
+    position: relative;
     height: 152px;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
+    min-height: 169px;
+    max-height: 196px;
+    overflow: auto;
 }
 
+.titleDate {
+    height: 64px;
+    margin-bottom: 16px;
+}
+.priceNintendo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0px;
+    left: 16px;
+}
+.regularPriceReleasesCard{
+    text-decoration: line-through;
+    font-family: var(--nintendo-font-search);
+    font-size: 0.75rem;
+    padding: 0 8px 0 8px;
+    margin: 0;
+}
+.discount {
+    display: flex;
+    
+}
 .heart {
     padding: 0.5rem;
     position: absolute;
@@ -134,14 +164,17 @@ html, body {
     font-size: 0.75rem;
     color: white;
     width: fit-content;
+    margin-bottom: 8px;
 }
+
 
 .dateBestSeller {
     font-weight: 300;
-    line-height: 2.35;
+    /*line-height: 2.35;*/
     margin-top: 5px;
-    margin-left: 5px;
     font-size: 0.75rem;
+    
+    font-family: var(--nintendo-font-search);
 }
 
 .discountLabelReleasesCard {
@@ -150,10 +183,27 @@ html, body {
     font-size: 0.75rem;
     color: white;
     width: fit-content;
+    height: 1.25rem;
+    position: relative;
+}
+.discountLabelReleasesCard::before{
+    content: "";
+    background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%207.36%2020%22%3E%20%20%20%20%3Cpath%20d%3D%22M7.369%200v20h-.181c-.558%200-1.094-.222-1.489-.617L.621%2014.305c-.397-.397-.62-.937-.616-1.5l.029-5.627c.003-.553.223-1.082.612-1.474L5.699.621C6.094.224%206.63%200%207.192%200h.177z%22%20fill%3D%22%23e60012%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E) no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    left: -7px;
+    top: 0;
+}
+
+.priceReleasesCard {
+    font-size: 1rem;
+    position: relative;
 }
 
 #footnote {
     font-size: 0.75rem;
+    font-family: var(--nintendo-font-search);
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -161,8 +211,13 @@ html, body {
     margin-inline-end: 0px;
 }
 
+.priceBestSeller, .priceReleasesCard {
+    margin: 0;
+}
+
 .link {
     line-height: 2, 35;
+    font-family: var(--nintendo-font);
     text-decoration: none;
     color: #E60012;
     cursor: pointer;
@@ -170,49 +225,3 @@ html, body {
     border-bottom: 2px solid rgb(230, 0, 18);
     transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
 }
-
-
-/*
-#headerBestSeller, #headerNewReleases {
-    box-sizing: border-box;
-    align-items: center;
-    color: rgb(72, 72, 72);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 16px;
-    height: 37.8px;
-    line-height: 22.4px;
-    width: 940.8px;
-    -webkit-box-align: center;
-    -webkit-font-smoothing: antialiased;
-}
-#h1BestSeller, #h1NewReleases {
-    margin-right: 1rem;
-    margin-bottom: 0px;
-    text-align: initial;
-    padding-right: 1rem;
-    border-right: 1px solid rgb(218, 218, 218);
-    border-right-color: rgb(218, 218, 218);
-border-right-style: solid;
-border-right-width: 0.8px;
-box-sizing: border-box;
-color: rgb(72, 72, 72);
-display: block;
-font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-font-size: 28px;
-font-weight: 700;
-height: 37.8px;
-letter-spacing: normal;
-line-height: 37.8px;
-margin-block-end: 0px;
-margin-block-start: 0px;
-margin-inline-end: 16px;
-margin-inline-start: 0px;
-margin: 0px 16px 0px 0px;
-padding: 0px 16px 0px 0px;
-text-align:;
-width: 255.5px;
--webkit-font-smoothing: antialiased;
-} */

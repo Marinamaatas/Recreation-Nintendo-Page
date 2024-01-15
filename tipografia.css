@@ -1,12 +1,49 @@
 @font-face {
-    font-family: "museo-sans-700";
-    src: url(fonts/MuseoSans_700.ttf);
-  }
-  
-  :root{
-    --nintendo-font:"museo-sans-700", -apple-system, BlinkMacSystemFont, sans-serif;
-    --color-font: rgb(72, 72, 72);
-    --font-weight-nintendo: 700;
-    --font-size-text: 0.875rem;
-    --line-text: 1.4;
-  }
+  font-family: "museo-sans-700";
+  src: url(fonts/MuseoSans_700.ttf);
+}
+
+@font-face {
+font-family: "museo-sans-100";
+src: url(fonts/MuseoSans-100.otf);
+}
+
+:root{
+--nintendo-font:"museo-sans-700", -apple-system, BlinkMacSystemFont, sans-serif;
+--nintendo-font-search:"museo-sans-100", -apple-system, BlinkMacSystemFont, sans-serif;
+--color-font: rgb(72, 72, 72);
+--font-weight-nintendo: 700;
+--font-size-text: 0.875rem;
+--line-text: 1.4;
+}
+
+@media (min-width: 1025px) {
+:root {
+  --border-radius-small: 0.75rem;
+  --border-radius: 1rem; 
+}
+
+.navStyle {
+  display: block;
+}
+
+.lensSearchDropdownAll {
+  flex-basis: 28.125rem;
+}
+
+.lensSearchDropdown {
+  max-width: 28.125rem;
+  font-size: 0.875rem;
+}
+
+#dropdownHeader {
+  display: inline-block;
+}
+}
+
+@media (min-width: 429px) {
+.myNintendoStoreText, .holidayGiftGuideText, .gamesText, .nintendoSwitchText, .newsAndEventsText, .playNintendoText  {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+}
