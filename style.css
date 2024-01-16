@@ -26,21 +26,22 @@
   line-height: 1.4;
   color: rgb(72, 72, 72);
   text-align: left;
-  padding: 10px;
-  margin-inline: 20%;
 }
 
 .miniNews {
   font-weight: bolder;
   font-size: 15px;
-  min-height: 70px;
-  max-height: 70px;
+  min-height: 90px;
+  max-height: 90px;
+  min-width: 262px;
+  max-width: 262px;
   overflow: hidden;
 }
 
 .wrapperNews {
   display: flex;
   flex-direction: column;
+  border: 3px solid green;
 }
 
 .imgFilaUno {
@@ -55,23 +56,27 @@
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 10px;
+  min-width: 1200px;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 img {
   overflow: hidden;
 }
 
-#item-1 {
-  margin-left: 0.5%;
-  margin-right: 0.5%;
-}
-#item-2 {
-  margin-left: 0.5%;
-  margin-right: 0.5%;
+#enlace1,
+#enlace2 {
+  margin-left: 1.75%;
+  margin-right: 1.75%;
 }
 
-#item-3 #item-4 #item-5 #item-6 {
-  flex-direction: row;
+#enlace3,
+#enlace4,
+#enlace5,
+#enlace6 {
+  margin-left: 1.5%;
+  margin-right: 1.5%;
 }
 
 .imgFilaDos {
@@ -82,16 +87,32 @@ img {
 
 .filaDos {
   display: flex;
+  flex-grow: 1;
   flex-wrap: nowrap;
   flex-direction: row;
+  min-width: 1175px;
+  max-width: 1175px;
+  margin: auto;
   justify-content: center;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
-.newsLink {
+
+.newsButtons {
   line-height: 2, 35;
   color: #ff0000;
   font-weight: bolder;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
+
+.newsLink:visited,
+.newsLink{
+    text-decoration: unset;
+    
+    color: unset;
+}
+
+
 .newsText {
   min-height: 40px;
   max-height: 40px;
@@ -103,10 +124,6 @@ img {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-
-  padding: 1%;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
 }
 #svgNews {
   transform: translate(-2px, 27.5%);
@@ -114,12 +131,11 @@ img {
 
 #NewsButton {
   cursor: pointer;
-  flex-direction: row;
   text-decoration: none;
   letter-spacing: 1.2px;
   font-weight: bolder;
   background-color: #ff0000;
-  display: inline-block;
+  display: inline;
   color: #fff;
   border-radius: 10px;
   padding-top: 7.5px;
@@ -133,7 +149,7 @@ img {
 }
 
 
-#NewsButton:hover {
+.NewsButton:hover {
   animation: pulse 0.3s 1 ease-out alternate;
   animation-fill-mode: forwards;
   background-color: #c80000;
