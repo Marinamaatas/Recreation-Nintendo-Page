@@ -14,7 +14,7 @@ h2 {
 }
 
 div {
-    
+
 }
 
 img {
@@ -34,9 +34,9 @@ img:hover {
 .fmario, .flink, .fsplatoon, .fkirby, .fpikmin, .fanimcro, .fmetroid, .fpoke {
     position: relative;
     z-index: -1;
+    overflow: hidden;
 }
 
 .mario, .link, .splatoon, .kirby, .pikmin, .animcro, .metroid, .poke {
     position: absolute;
-    overflow: hidden;
 }
