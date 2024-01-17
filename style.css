@@ -3,8 +3,8 @@
   color: rgb(72, 72, 72);
   font-weight: 700;
   font-size: 28px;
+  margin-left: 20px;
   line-height: 1.4;
-  margin-inline: -1%;
 }
 
 .fechasNews {
@@ -41,7 +41,8 @@
 .wrapperNews {
   display: flex;
   flex-direction: column;
-  border: 3px solid green;
+  margin-inline: auto;
+  max-width: 1200px;
 }
 
 .imgFilaUno {
@@ -102,16 +103,16 @@ img {
   color: #ff0000;
   font-weight: bolder;
   text-decoration: underline;
+  text-underline-offset: 5px;
   text-decoration-thickness: 2px;
 }
 
 .newsLink:visited,
-.newsLink{
-    text-decoration: unset;
-    
-    color: unset;
-}
+.newsLink {
+  text-decoration: unset;
 
+  color: unset;
+}
 
 .newsText {
   min-height: 40px;
@@ -135,21 +136,19 @@ img {
   letter-spacing: 1.2px;
   font-weight: bolder;
   background-color: #ff0000;
-  display: inline;
+  display: flexbox;
+  width: 250px;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 12px;
   padding-top: 7.5px;
   padding-bottom: 12.5px;
-  padding-left: 25px;
-  padding-right: 25px;
   text-align: center;
-  margin-top: -1.25%;
-  margin-left: -1.5%;
+  margin-top: -7.5%;
+  margin-left: 2%;
   transition: background-color 0.4s;
 }
 
-
-.NewsButton:hover {
+#NewsButton:hover {
   animation: pulse 0.3s 1 ease-out alternate;
   animation-fill-mode: forwards;
   background-color: #c80000;
@@ -168,15 +167,121 @@ img {
 
 .item:hover a,
 .item:hover h3,
-.item:hover > .miniNews{
-color:  #c80000;
-transition-timing-function: ease-in-out;
+.item:hover > .miniNews {
+  color: #e60000;
+  transition-timing-function: ease-in-out;
 }
+.item:hover > .newsButtons {
+  color: #c80000;
+  transition-timing-function: ease-in-out;
+}
+
 .item:hover img {
   filter: brightness(75%);
   transition: filter 200ms ease-in-out 25ms;
-    transition-property: filter;
-    transition-duration: 200ms;
-    transition-timing-function: ease-in-out;
-    transition-delay: 25ms;
+  transition-property: filter;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 25ms;
+}
+
+@media (max-width: 767px) {
+  .HeadingNews {
+    font-size: 32px;
+  }
+  .newsTitle {
+    min-height: 40px;
+  }
+
+  #news {
+    font-size: 26px;
+  }
+
+  .miniNews {
+    font-size: 26px;
+    min-height: 110px;
+    max-height: 110px;
+    min-width: 292px;
+    max-width: 292px;
+  }
+
+  .wrapperNews {
+    min-width: none;
+    max-width: 767px;
+  }
+
+  .imgFilaUno {
+    height: 390px;
+    width: 670px;
+  }
+
+  .filaUno {
+    flex-direction: column;
+    min-width: 670px;
+    max-width: 670px;
+    margin-bottom: 50px;
+  }
+  #enlace1,
+  #enlace2 {
+    margin-left: 0.25%;
+  }
+
+  #enlace3,
+  #enlace4,
+  #enlace5,
+  #enlace6 {
+    margin-left: 0.25%;
+  }
+
+  .imgFilaDos {
+    height: 207px;
+    width: 322px;
+  }
+
+  .filaDos {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    min-width: 700px;
+    max-width: 700px;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+
+  .newsButtons {
+    color: #ff0000;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    margin-bottom: 10%;
+  }
+
+  .newsLink:visited,
+  .newsLink {
+    text-decoration: unset;
+    color: unset;
+  }
+
+  .newsText {
+    min-height: 80px;
+    max-height: 80px;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+
+  #NewsButton {
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    font-weight: bolder;
+    background-color: #ff0000;
+    display: flexbox;
+    width: 680px;
+    border-radius: 12px;
+    padding-top: 17.5px;
+    padding-bottom: 22.5px;
+    text-align: center;
+    margin-left: unset;
+  }
 }
