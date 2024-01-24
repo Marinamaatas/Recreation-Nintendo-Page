@@ -1,9 +1,9 @@
-html, body {
+html, body { /*GENERAL*/
     font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0px;
 }
 
-nav {
+nav { /*Barra roja*/
     display: inline
 }
 
@@ -25,36 +25,32 @@ img, svg {
 }
 
 .logonintendo {
-    margin-left: 220px;
+    margin-left: 240px;
 }
 
 .rrsslogos {
     margin-right: 235px;
+
 }
 
 .rrsslogos svg {
-    margin-right: 60px;
+    margin-right: 55px;
 }
 
-h2 {
-    text-decoration: none;
-    color: rgb(72, 72, 72);
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-h2:hover, li:hover {
-    border-bottom: 2px solid rgb(230, 0, 18);
+section { /*Listas*/
+    display: grid;
+    grid-template-rows: auto;
 }
 
 .Footlists {
-    display: flex;
+    margin-top: 1rem;
 }
 
 .About, .Shop, .Mynintendo, .Support, .Parents, .Community, .Privacy {
     text-decoration: none;
     color: rgb(72, 72, 72);
     font-size: 18px;
+    margin-bottom: 1rem;
 }
 
 .About:hover, .Shop:hover, .Mynintendo:hover, .Support:hover, .Parents:hover, .Community:hover, .Privacy:hover {
@@ -64,6 +60,7 @@ h2:hover, li:hover {
 li {
     font-size: 16px;
     transition: 75ms;
+    margin-bottom: 1rem;
 }
 
 li:hover {
@@ -91,23 +88,26 @@ span {
     float: top;
 }
 
-.privacycert {
+.privacycert { /*Div del certificado de privacidad*/
    display: grid;
+   justify-self: end;
+   margin-right: 150px;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
 }
 
-.barranegra {
+.barranegra { /*Barra negra (lo más abajo de la página*/
     background-color: #242424;
     color: white;
-    margin: -10px;
+    margin: 0px;
     height: 85px;
-    text-align: center;
-    align-content: center;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 p {
-    text-align: left;
-    display: inline;
     font-size: 12px;
 }
 
@@ -119,10 +119,14 @@ a {
 .footer {
     text-decoration: none;
     font-weight: bold;
+    margin-left: 5rem;
+    margin-right: 1rem;
 }
 
 .contact, .website, .terms, .docs {
     transition: 75ms;
+    align-self: center;
+    margin-right: 1rem;
 }
 
 .contact:hover, .website:hover, .terms:hover, .docs:hover {
@@ -136,9 +140,12 @@ a {
     transition: 75ms;
 }
 
+b {
+    margin-left: 0.75rem;
+}
+
 b:hover {
     border-bottom: 2px solid white;
     cursor: pointer;
 }
 
-@media
