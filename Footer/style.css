@@ -1,159 +1,388 @@
-html, body { /*GENERAL*/
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-    margin: 0px;
+*, ::before, ::after {
+    box-sizing: border-box;
 }
 
-.allFooter {
-    
-}
-
-nav { /*Barra roja*/
-    display: flex;
-    flex: wrap;
-}
-
-.barraroja {
-    background-color: rgb(230, 0, 18);
-    margin:0px;
-    height: 120.23px;
+html, body {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-svg {
-    color: white;
-}
-
-img, svg {
-    cursor: pointer;
-}
-
-.logonintendo {
-    margin-left: 230px;
-}
-
-.rrsslogos {
-    margin-right: 220px;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.rrsslogos svg {
-    margin-right: 50px;
-}
-
-.Footlists { /*Lista de enlaces del Footer*/
-    display: flex;
-    margin: 1rem auto;
-    row-gap: 2rem;
-    justify-content: center;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-} 
-
-span {
-    border-left: 1px solid rgb(218, 218, 218);
-    margin-right: 3rem;
-}
-
-.ParentsPrivacy {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-.About, .Shop, .Mynintendo, .Support, .Parents, .Community, .Privacy {
-    text-decoration: none;
-    color: rgb(72, 72, 72);
-    font-size: 18px;
-    margin-bottom: 1.25rem;
-}
-
-.About:hover, .Shop:hover, .Mynintendo:hover, .Support:hover, .Parents:hover, .Community:hover, .Privacy:hover {
-    color: rgb(72, 72, 72);
-}
-
-li {
+    padding: 0px;
+    margin: 0px;;
+    font-family: var(--nintendo-font);
     font-size: 16px;
-    transition: 75ms;
-    margin-bottom: 0.75rem;
+    line-height: var(--line-text);
+    color: var(--color-font);
+    -webkit-font-smoothing: antialiased;
 }
 
-li:hover {
-    border-bottom: 2px solid #AC000D;
-    color: #AC000D;
+.barraRojaFooter {
+    background-color: rgb(230, 0, 18);
+    padding: 2.25rem 1rem;
+    color: rgb(255, 255, 255);
+    display: grid;
+    place-items: center end;
+    -webkit-box-align: center;
 }
 
-ul {
-    list-style:  none;
-    color: rgb(230, 0, 18);
-    font-weight: bold;
-    cursor: pointer;
+.rrssLogos {
+    color: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    -webkit-box-align: center;
+    width: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
 }
 
-.SpanAbout {
-    border-left: none;
-}
-
-.privacycert { /*Div del certificado de privacidad*/
-   display: grid;
-   justify-self: end;
-   margin-right: 125px;
-   margin-bottom: 1rem;
-}
-
-.barranegra { /*Barra negra (lo más abajo de la página)*/
-    background-color: #242424;
-    color: white;
-    margin: 0px;
-    height: 85px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-p {
-    font-size: 12px;
+.rrssLogos {
+    max-width: 90rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
-    cursor: pointer;
-    font-size: 12px;
-}
-
-.footer {
+    color: inherit;
     text-decoration: none;
-    font-weight: bold;
-    margin-left: 5rem;
-    margin-right: 1rem;
 }
 
-.contact, .website, .terms, .docs {
-    transition: 75ms;
-    align-self: center;
-    margin-right: 1rem;
+.rrssLogos a svg {
+    display: block;
 }
 
-.contact:hover, .website:hover, .terms:hover, .docs:hover {
+.footlistsFooter {
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 1rem;
+}
+
+.allFootlistFooter {
+    max-width: 90rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.allFootlistFooter1 {
+    display: grid;
+    grid-template-columns: 15.625rem;
+    margin: 1rem auto;
+    row-gap: 2rem;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.divFootlistFooter1:first-child {
+    grid-row: span 2;
+}
+
+.divFootlistFooter1 {
+    border-left: 1px solid rgb(218, 218, 218);
+    padding-left: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin: 0px 0px 1em;
+    padding: 0px;
+}
+
+.aboutNintendoFooter {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.125rem;
+}
+
+.linkAboutFooter, .linkAboutFooter1, .linkBarraNegraFooter {
+    background: transparent;
+    margin: 0px;
+    border: 0px;
+    line-height: 1.4;
+    border-radius: var(--border-radius);
+    display: inline-block;
+    color: rgb(230, 0, 18);
+    box-shadow: rgba(172, 0, 13, 0) 0px 0px 0px 4px;
+    transition: box-shadow 200ms ease-in-out 25ms;
+}
+
+.linkAboutFooter:focus-visible, .linkAboutFooter:hover {
+    color: rgb(172, 0, 13);
+}
+
+.linkAboutFooter1:focus-visible, .linkAboutFooter1:hover {
+    color: rgb(172, 0, 13);
+}
+
+.linkAboutFooter:focus-visible, .linkAboutFooter:hover .spanAboutNintendo, .linkBarraNegraFooter:focus-visible, .linkBarraNegraFooter:hover .spanAboutNintendo {
+    text-decoration: none;
+    border-bottom-color: rgb(172, 0, 13);
+}
+
+.linkAboutFooter1:focus-visible, .linkAboutFooter1:hover .spanAboutNintendo {
+    text-decoration: none;
+    border-bottom-color: rgb(172, 0, 13);
+}
+
+.aboutNintendoFooter span {
+    color: rgb(72, 72, 72);
+    font-size: 1rem;
+    border-bottom-color: transparent;
+}
+
+.spanAboutNintendo {
+    font-size: 0.875rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding-bottom: 0px;
+    position: relative;
     border-bottom: 2px solid rgb(230, 0, 18);
+    margin: 0px;
+    transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
 }
 
-.flag {
-    border-radius: 2px;
-    border-color: white;
-    cursor: pointer;
-    transition: 75ms;
+.ulAboutFooter {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
-b {
-    margin-left: 0.75rem;
+p, ol, ul {
+    font-weight: 300;
+    font-size: 0.875rem;
 }
 
-b:hover {
-    border-bottom: 2px solid white;
-    cursor: pointer;
+.linkAboutFooter1 {
+    margin-bottom: 0.5rem;
+}
+
+.linkAboutFooter1 span {
+    border-bottom-color: transparent;
+}
+
+.divFootlistFooter2 {
+    border-left: 1px solid rgb(218, 218, 218);
+    padding-left: 1.5rem;
+    grid-row: span 2;
+}
+
+.divFootlistIcon {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.linkIconFooter {
+    display: block;
+    grid-column: span 1;
+    justify-self: center;
+    max-width: 4rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.svgIconFooter .cls-1 {
+    fill: rgb(255, 255, 255);
+}
+
+.cls-1 {
+    fill: #fff;
+}
+
+.svgIconFooter .cls-2 {
+    fill: rgb(35, 31, 32);
+}
+
+.svgIconFooter .cls-3 {
+    fill: rgb(8, 94, 169);
+}
+
+.svgIconFooter .cls-4 {
+    fill: rgb(21, 16, 17);
+}
+
+.barraNegraFooter {
+    background-color: rgb(36, 36, 36);
+    padding: 2rem 1rem 114px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.allBarraNegraFooter {
+    max-width: 90rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pBarraNegraFooter {
+    text-align: center;
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pBarraNegraFooter {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 0.625rem;
+}
+
+.pBarraNegraFooter span {
+    display: block;
+}
+
+.infoBarraNegraFooter {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.linkBarraNegraFooter {
+    color: rgb(255, 255, 255);
+}
+
+.linkBarraNegraFooter span {
+    border-bottom-color: transparent;
+    font-size: 0.625rem;
+}
+
+.linkBarraNegraFooter:focus-visible, .linkBarraNegraFooter:hover {
+    color: rgb(255, 255, 255);
+}
+
+.linkFlagTextFooter {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.spanFlagFooter {
+    border-radius: 0.25rem;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+.spanFlagFooter img {
+    display: block;
+}
+
+.spanFlagTextFooter {
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+}
+
+.spanFlagTextFooter:focus-visible, .spanFlagTextFooter:hover {
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+@media (min-width: 429px) {
+    .allFootlistFooter1 {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1rem;
+    }
+
+    .aboutNintendoFooter {
+        font-size: 1.125rem;
+    }
+
+    h2 {
+        font-size: 1.3125rem;
+    }
+
+    .aboutNintendoFooter span {
+        font-size: 1.125rem;
+    }
+
+    p, ol, ul {
+        font-size: 1rem;
+    }
+
+    .spanAboutNintendo {
+        font-size: 1rem;
+    }
+
+    .pBarraNegraFooter {
+        font-size: 0.75rem;
+    }
+
+    .pBarraNegraFooter span {
+        display: inline-block;
+    }
+
+    .linkBarraNegraFooter span {
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .rrssLogos {
+        width: 100%;
+        justify-items: end;
+        grid-template-columns: auto repeat(4, 58px);
+    }
+
+    .rrssLogos > :first-child {
+        justify-self: start;
+        grid-column: span 1;
+    }
+
+    .allFootlistFooter1 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .allFootlistFooter1 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .divFootlistIcon {
+        grid-template-columns: 1fr auto auto;
+    }
+
+    .linkIconFooter {
+        justify-self: end;
+        grid-column: span 3;
+    }
+
+    .barraNegraFooter {
+        padding: 2rem 1rem;
+    }
+
+    .pBarraNegraFooter {
+        max-width: unset;
+        text-align: left;
+    }
+
+    .pBarraNegraFooter span {
+        display: inline;
+    }
+
+    .infoBarraNegraFooter {
+        -webkit-box-pack: start;
+        justify-content: start;
+    }
+}
+
+@media (min-width: 1440px) {
+    .allFootlistFooter1 {
+        grid-template-columns: repeat(6, 1fr);
+        margin-left: -1rem;
+    }
 }
