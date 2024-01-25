@@ -12,7 +12,7 @@ html, body {
     padding: 0px;
     font-family: var(--nintendo-font);
     font-size: 16px;
-    line-height: var(--line-text-font);
+    line-height: var(--line-text);
     color: var(--color-font);
     -webkit-font-smoothing: antialiased;
 }
@@ -348,7 +348,7 @@ a {
     color: inherit;
 }
 
-.supportList, .wishList, .cartList, .userList {
+.supportList, .wishList, .cartList, .userList, .hiddenLogoNintendo, .hiddenFlagUSA1, .hiddenMenuButton, .hiddenWishListButton, .hiddenCartButton, .hiddenAccountButton {
     display: inline-flex;
     -webkit-box-align: center;
     align-items: center;
@@ -559,4 +559,124 @@ a {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 10;
+}
+
+
+
+
+
+
+.hiddenNavHeader {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 46px;
+    z-index: 1000;
+    background-color: rgb(230, 0, 18);
+    color: rgb(255, 255, 255);
+}
+
+.hiddenFlagUSA {
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.hiddenFlagUSA2 {
+    display: block;
+    width: 1.25rem;
+    min-width: 1.25rem;
+    height: 1.25rem;
+    min-height: 1.25rem;
+}
+
+.hiddenFlagUSA3 {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.hiddenFlagUSA4 {
+    border-radius: 0.25rem;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+.hiddenFlagUSA4 img {
+    display: block;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.hiddenNavSubheader {
+    width: 100%;
+    height: calc(58px + 1rem);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.hiddenNavSubheader1 {
+    margin: auto;
+    height: 58px;
+    width: 96%;
+    max-width: 440px;
+}
+
+.hiddenNavSubheader2 {
+    position: relative;
+    height: 58px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25rem 0.5rem 0px;
+}
+
+.hiddenMenuButton, .hiddenWishListButton, .hiddenCartButton, .hiddenAccountButton {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    position: relative;
+    height: 58px;
+}
+
+.hiddenSearchButton {
+    margin-top: -1rem;
+    width: 60px;
+    height: 60px;
+    background: rgb(230, 0, 18);
+    border: none;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.hiddenCartIcon {
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    color: inherit;
 }

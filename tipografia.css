@@ -39,6 +39,20 @@
   #dropdownHeader {
     display: inline-block;
   }
+
+  .navStyleHidden {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navStyle {
+    display: none;
+  }
+  
+  .navStyleHidden {
+    display: unset;
+  }
 }
 
 @media (min-width: 429px) {
