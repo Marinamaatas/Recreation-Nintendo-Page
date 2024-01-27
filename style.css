@@ -6,7 +6,7 @@ body{
     font-family: museo-sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .fondo{
-    background-image: url(Mystery-Homepage-BG.png);
+    background-image: url(BackgroundPaper.png);
     background-repeat: round;
     height: 450px;
 }
@@ -18,7 +18,9 @@ body{
     width: 1400px;
 }
 
-
+@media screen and (max-width:){
+    
+}
 .return{
     display: flex;
     margin-left: 60px;
@@ -45,18 +47,16 @@ h2{
     border: none;
     border-radius: 10px;
     height: 50px;
-    width: 150px;
+    width: 160px;
 }
 
-.Learn:hover{
+.Demo:hover{
     background-color: rgb(172, 0, 13); 
 }
 
 .clasificacion{
     cursor: pointer;
     font-size: 12px;
-    display: flex;
-    
 }
 
 p{
