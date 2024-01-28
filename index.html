@@ -1,130 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="--app-height: 958px;">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tipografia.css">
     <title>BANNER</title>
   </head>
+  
   <body>
-    <section>
-      <div class="fondo">
-        <picture>
-          <source
-            srcset="AnotherCode300x273.jpg"
-            class=""
-            media="(max-width: 300px)"
-          />
-          <source
-            srcset="AnotherCode600x337.jpg"
-            class=""
-            media="(max-width: 600px)"
-          />
-          <img src="AnotherCode1500x542.jpg" class="img-anothercode" alt="" />
-        </picture>
-      </div>
-
-      <br />
-
-      <div class="return">
-        <h2>Unravel the truth behind the lost memories of your family</h2>
-
-        <button
-          class="Demo"
-          href="https://www.nintendo.com/us/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/"
-        >
-          <strong>Available now</strong>
-        </button>
-        <div class="clasificacion">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 39.68 59.53"
-            width="40"
-            height="60"
-            role="img"
-            title="Teen"
-          >
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: #fff;
-                }
-              </style>
-            </defs>
-            <g data-name="Layer 2">
-              <g data-name="Layer 1">
-                <path class="cls-1" d="M39.69 0H0v59.53h39.69V0z"></path>
-                <path d="M39.11.64v58.25H.58V.64h38.53"></path>
-                <path
-                  class="cls-1"
-                  d="M2.52 2.71H36.9v9.66H2.52zM2.5 14.47h34.4v35.51H2.5zm.01 42.32v-4.72h6.9v1.11H5.28v.67h3.5v1.1h-3.5v.74h4.29v1.1H2.51zm12.93-3.34a.52.52 0 00-.4-.32 2.53 2.53 0 00-.72-.09c-.61 0-.88.1-.88.28 0 .69 4.87.26 4.87 2 0 1.09-1.64 1.63-4 1.63s-3.7-.73-3.75-1.58h2.65a.69.69 0 00.46.37 2.52 2.52 0 00.79.12c.69 0 1.16-.12 1.16-.35 0-.71-4.88-.22-4.88-2 0-1 1.56-1.5 3.67-1.5 2.35 0 3.43.66 3.63 1.49zm7.02.67h1.09c.86 0 1.32-.13 1.32-.45s-.47-.49-1.11-.49h-1.3zm0 1v1.64h-2.77v-4.69h4c2.82 0 3.75.44 3.75 1.35 0 .55-.44 1-1.43 1.16.9.18 1.44.29 1.44 1.24 0 .61 0 .83.29.83v.14h-2.81a1.85 1.85 0 01-.14-.83c0-.61-.19-.81-1.48-.81zm9.45-1.94V54h1.16c.55 0 1-.15 1-.42s-.54-.37-1.13-.37zm0 1.64v.87h1.21c.69 0 1.21-.08 1.21-.43s-.65-.44-1.53-.44zm-2.77 2v-4.75h4c1.9 0 3.42.26 3.42 1.19 0 .49-.57.84-1.1 1 .91.13 1.4.57 1.4 1.08 0 1.05-1.44 1.42-3.64 1.42z"
-                ></path>
-                <path
-                  d="M5.37 23.09l26.61-6.64 2.05 7.1-8.55 2.13 5.73 19.92-9.51 2.38-5.74-19.93-8.55 2.13-2.04-7.09zM28.82 4.8h2.26l2.62 2.99-.09-1.25V4.8h2.31v5.47h-2.26l-2.62-2.98.04 1.29.05 1.69h-2.31V4.8zm-8.14 0h5.99v1.27h-3.58v.79h3.03v1.27h-3.03v.86h3.73v1.28h-6.14V4.8zm-8.42 0h5.99v1.27h-3.59v.79h3.04v1.27h-3.04v.86h3.73v1.28h-6.13V4.8zm-8.79 0h6.74v1.43H8.05v4.04H5.63V6.23H3.47V4.8z"
-                ></path>
-              </g>
-            </g>
-          </svg>
-          <p>Mild Blood. Mild Violence. Alcohol and Tobacco Reference</p>
+    <div class="fullContentBanner">
+        <div class="fondoBanner"></div>
+        <div class="grupoImgPrincipalBanner">
+          <a aria-label="Save up to 50% on select games through 2/7 at 11:59 p.m. PT" href="/us/store/games/deals/">
+            <div class="imgPrincipalBanner">
+              <picture data-testid="hero-picture" class="responsiveImgBanner">
+                <source media="(min-width: 1440px)" srcset="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1500/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/3600x1300_JanSale_Ncom_Centerstage_Desktop_EN 1x, https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1500/dpr_2.0/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/3600x1300_JanSale_Ncom_Centerstage_Desktop_EN 2x" width="1440" height="542">
+                <source media="(min-width: 1280px)" srcset="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1300/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/3600x1300_JanSale_Ncom_Centerstage_Desktop_EN 1x, https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1300/dpr_2.0/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/3600x1300_JanSale_Ncom_Centerstage_Desktop_EN 2x" width="1280" height="469">
+                <source media="(min-width: 1025px)" srcset="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1100/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/3600x1300_JanSale_Ncom_Centerstage_Desktop_EN 1x, https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1100/dpr_2.0/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/3600x1300_JanSale_Ncom_Centerstage_Desktop_EN 2x" width="1025" height="397">
+                <source media="(min-width: 926px)" srcset="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1000/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 1x, https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1000/dpr_2.0/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 2x" width="926" height="909">
+                <source media="(min-width: 844px)" srcset="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_900/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 1x, https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_900/dpr_2.0/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 2x" width="844" height="818">
+                <source media="(min-width: 768px)" srcset="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_800/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 1x, https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_800/dpr_2.0/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 2x" width="768" height="727">
+                <source media="(min-width: 610px)" srcset="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_700/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 1x, https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_700/dpr_2.0/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 2x" width="610" height="636">
+                <source media="(min-width: 516px)" srcset="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_600/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 1x, https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_600/dpr_2.0/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 2x" width="516" height="545">
+                <source media="(min-width: 416px)" srcset="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_500/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 1x, https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_500/dpr_2.0/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 2x" width="416" height="455">
+                <source media="(min-width: 316px)" srcset="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_400/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 1x, https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_400/dpr_2.0/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN 2x" width="316" height="364">
+                <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_300/ncom/en_US/merchandising/Sales%20and%20Deals/2024/Jump%20Start%20January%20Sale/2200x2000_JanSale_Ncom_Centerstage_Mobile_EN" class="imgPrincipalBanner1" loading="eager">
+              </picture>
+            </div>
+          </a>
         </div>
-      </div>
-    </section>
-    <br />
-    <div class="botones">
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12 7.75739L13.4142 9.1716L10.5858 12L13.4142 14.8285L12 16.2427L7.75736 12L12 7.75739Z"
-          fill="currentColor"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"
-          fill="currentColor"
-        />
-      </svg>
-
-      <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23Z"
-        fill="currentColor"
-      />
-      <path d="M16 12L10 16.3301V7.66987L16 12Z" fill="currentColor" />
-    </svg>
-    
-      <svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M11.0858 7.75739L15.3284 12L11.0858 16.2427L9.67157 14.8285L12.5 12L9.67157 9.1716L11.0858 7.75739Z"
-    fill="currentColor"
-  />
-  <path
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z"
-    fill="currentColor"
-  />
-</svg>
-
+        <section class="fraseSubImgBanner">
+          <div class="divFraseSubImgBanner">
+            <div class="divFraseSubImgBanner1">
+              <h2 class="h2FraseBanner">Save up to 50% on select games through 2/7 at 11:59 p.m. PT</h2>
+              <a href="/us/store/games/deals/" class="botonRojoBanner">
+                <span class="spanBotonRojoBanner"></span>
+                <span class="spanBotonRojoBanner1">Shop now</span>
+              </a>
+            </div>
+          </div>
+        </section>
     </div>
   </body>
 </html>
