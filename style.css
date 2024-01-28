@@ -115,7 +115,7 @@ a {
     border-width: 1px;
     border-style: solid;
     border-color: rgb(230, 0, 18);
-    border-radius: var(--border-radius-small);
+    border-radius: var(--border-radius-small-one);
     top: 0px;
     left: 0px;
     box-sizing: content-box;
@@ -176,21 +176,17 @@ a {
 }
 
 @media (min-width: 1025px) {  
-    .fondo600 {
-        display: none;
-    }
-
-    .img-anothercode {
-        display: unset;
-    }
-
-    .fondoBanner {
+       .fondoBanner {
         position: absolute;
         height: calc(100% - 11.4rem);
     }
 
     .grupoImgPrincipalBanner {
         padding-top: 2rem;
+    }
+
+    .responsiveImgBanner {
+        width: 96%;
     }
 
     .imgPrincipalBanner1 {
@@ -209,5 +205,4 @@ a {
         color: rgb(72, 72, 72);
         text-align: start;
     }
-
 }

@@ -15,6 +15,7 @@
   --font-weight-nintendo: 700;
   --font-size-text: 0.875rem;
   --line-text: 1.4;
+  --border-radius-small-one: 0.5rem;
 }
 
 @media (min-width: 1025px) {
