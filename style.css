@@ -11,7 +11,7 @@ html style {
     height: var(--app-height);
 }
 
-html, body {
+/*html, body {
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -20,11 +20,23 @@ html, body {
     line-height: var(--line-text-font);
     color: var(--color-font);
     margin-left: 48px; /*this is not the solution because the margin left is adaptative*/
+/*}*/
+body {
+    overflow-x: hidden;
 }
 #bestSellersansNewReleases {
     padding-top: 3rem;
     padding-bottom: 3rem;
     margin: 0 auto;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--nintendo-font);
+    font-size: 16px;
+    line-height: var(--line-text-font);
+    color: var(--color-font);
+    margin-left: 48px; 
+    
 }
 #h1BestSeller, #h1NewReleases {
     padding: 0px 16px 0px 0px;
@@ -44,23 +56,74 @@ html, body {
     cursor: pointer;
     position: relative;
     border-bottom: 2px solid rgb(230, 0, 18);
-    transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+    margin-left: 16px;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.seeFullList:hover {
+    color: #AC000D;
+    border-bottom-color: rgb(170, 0, 14);
+    
 }
 #bestSellerCards, #newReleasesCards {
-    margin-right: 6rem;
+    /*margin-right: 6rem;*/
     justify-content: left;
     display: flex;
+    position: relative;
+    z-index: 0;
+    min-width: fit-content;
+    max-width: 1024px;
+    
+}
+
+.grayArea {
+    width: 80px;
+    height: 391px;
+    background-color: gray;
+    opacity: 50%;
+    position: absolute;
+    position: sticky;
+    border-radius: 10px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    pointer-events: none; 
+    cursor: pointer;
+}
+
+.grayArea::before {
+    content: '>';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(200, 200, 200, 0.7); 
+    font-size: 80px; 
+}
+
+.grayArea:hover {
+    opacity: 80%;
+}
+
+.grayArea:hover::before {
+    color: white;
 }
 
 .bestSellerCard, .newReleasesCard { /*cambiar esto de max min*/
     border-radius: 10px;
     border: 1px solid rgb(218, 218, 218);
-   /* height: 316px;*/
+    height: 316px;
     width: 262px;
     margin: 24px;
     display: block;
     cursor: pointer;
-   /* max-height: 316px;*/
+}
+#lastBestSellerCard, #lastNewReleasesCard {
+    margin-right: 0;
+}
+
+.newReleasesCard {
+    height: 342px;
 }
 
 .imgCard {
@@ -69,6 +132,8 @@ html, body {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+
+
 
 #headerBestSeller, #headerNewReleases {
     align-items: center;
@@ -81,16 +146,19 @@ html, body {
     
     text-decoration: none;
 }
-.titleBestSeller:hover, .titleReleasesCard:hover{
+.bestSellerCard:hover .titleBestSeller, .newReleasesCard:hover .titleReleasesCard{
     color: #e60012;
     cursor: pointer;
 }
-
+.bestSellerCard:hover .imgCard, .newReleasesCard:hover .imgCard{
+    transform: translateY(-10px);
+}
 .consoleReleasesCard, .consoleBestSeller {
     font-size: 14px;
     font-size: 0.875rem;
     font-family: var(--nintendo-font-search);
 }
+
 
 .separator {
     display: block;
@@ -101,15 +169,21 @@ html, body {
 }
 
 .textcard {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 1rem 1rem;
     position: relative;
     height: 152px;
     display: flex;
     flex-direction: column;
-    min-height: 169px;
-    max-height: 196px;
+    height: 169px;
     overflow: auto;
 }
+
+.newReleasesCard .textcard {
+    height: 196px;
+}
+
+
 
 .titleDate {
     height: 64px;
@@ -120,7 +194,8 @@ html, body {
     flex-direction: column;
     justify-content: flex-start;
     position: absolute;
-    bottom: 0px;
+    
+    bottom: 10px;
     left: 16px;
 }
 .regularPriceReleasesCard{
@@ -137,9 +212,31 @@ html, body {
 .heart {
     padding: 0.5rem;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
- }
+    bottom: 10px;
+    right: 0px; 
+    /*transition: transform 0.3s ease-out;*/
+}
+
+/*.heart:hover {
+  transform: scale(1.1); /* Puedes ajustar la escala o cualquier otra transformación según tus necesidades */
+}
+
+/*.heart:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("imagen2.png"); 
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.heart:hover::before {
+  opacity: 1;
+}*/
 
 .sepCon {
     display: flex;
@@ -165,6 +262,7 @@ html, body {
     color: white;
     width: fit-content;
     margin-bottom: 8px;
+    height: 19px;
 }
 
 
@@ -209,6 +307,9 @@ html, body {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    display: flex;
+    flex-direction: column;
+     justify-content: center; 
 }
 
 .priceBestSeller, .priceReleasesCard {
@@ -223,5 +324,11 @@ html, body {
     cursor: pointer;
     position: relative;
     border-bottom: 2px solid rgb(230, 0, 18);
-    transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+
+.link:hover {
+    color: #AC000D;
+    border-bottom-color: rgb(170, 0, 14);
 }
