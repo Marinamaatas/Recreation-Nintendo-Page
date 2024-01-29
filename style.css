@@ -1,0 +1,179 @@
+html, body {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgb(72, 72, 72);
+  box-sizing: border-box;
+  
+}
+
+
+
+h2{
+  color: rgb(72, 72, 72);
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0px;
+  margin: 0px 0px 1em;
+  padding: 0px;
+  font-weight: 700;
+  margin-block: 0px;
+  line-height: 1.35;
+}
+
+
+
+
+
+@media (max-width: 767px) {
+
+ .imagen{
+  display: none;
+ }
+ .sustituida{
+  display: unset;
+
+  
+ }
+  }
+  
+
+  @media (min-width:768px){
+    .imagen{
+      display: unset;
+     }
+    
+     .sustituida{
+      display: none;
+     }
+  }
+
+  
+  @media (max-width:654px){
+    Button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+      
+      
+    }
+  }
+
+
+button{
+  background-color: rgb(230, 0, 18); 
+  border-color: rgb(230, 0, 18); 
+ 
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  font-size: 20px;
+ display: flex;
+ flex-direction: row;
+ justify-self: unset;
+ cursor: pointer;
+ position: relative;
+ margin: 0px;
+
+ 
+ 
+}
+
+element {
+  background-color: rgb(230, 0, 18);
+  border-color: rgb(230, 0, 18);
+  transform: none;
+}
+
+
+
+.texto{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+img {  
+  min-height: 2px;
+  width: 100%;
+  padding: 7px;
+  border-radius: 2rem;
+}
+
+.Buttons{
+  order: initial;
+  padding: 5px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  
+  text-align: start;
+  gap: 20px;
+ flex-direction: row;
+ flex-wrap: wrap;
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+  position: relative;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  scroll-margin-top: 120px;
+  margin: 8px;
+  padding: 2px;
+  scroll-margin-top: 120px;
+  
+}
+
+
+  h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 4px;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+}
+
+
