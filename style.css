@@ -112,7 +112,11 @@ body{
     font-size: xx-large;
     cursor: pointer;
 }
-button:hover{
+.left:hover{
+    background-color: rgba(57, 57, 57, 0.8);
+    color: white;
+}
+.right:hover{
     background-color: rgba(57, 57, 57, 0.8);
     color: white;
 }
