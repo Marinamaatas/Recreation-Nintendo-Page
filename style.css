@@ -11,16 +11,7 @@ html style {
     height: var(--app-height);
 }
 
-/*html, body {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    font-family: var(--nintendo-font);
-    font-size: 16px;
-    line-height: var(--line-text-font);
-    color: var(--color-font);
-    margin-left: 48px; /*this is not the solution because the margin left is adaptative*/
-/*}*/
+
 body {
     overflow-x: hidden;
 }
@@ -42,15 +33,10 @@ body {
     padding: 0px 16px 0px 0px;
     border-right: 1px solid rgb(218, 218, 218);
     border-right-width: 0.8px;
-    /*font-family: "museo-sans", sans-serif;
-    color: color-font;*/
     font-weight: 700;
     font-size: 28px;
-    /*line-height: 1.4;*/
-    /*margin-inline: -1%;*/
 }
 .seeFullList {
-    /*line-height: 2, 35;*/
     text-decoration: none;
     color: #E60012;
     cursor: pointer;
@@ -66,28 +52,29 @@ body {
     
 }
 #bestSellerCards, #newReleasesCards {
-    /*margin-right: 6rem;*/
     justify-content: left;
     display: flex;
     position: relative;
     z-index: 0;
-    min-width: fit-content;
-    max-width: 1024px;
+    max-width: fit-content;
+    right: 40px;
+    padding-left: 120px;
     
+}
+#bestSellerCards {
+    margin-bottom: 50px;
 }
 
 .grayArea {
-    width: 80px;
-    height: 391px;
+    width: 65px;
+    height: 381px;
     background-color: gray;
     opacity: 50%;
     position: absolute;
-    position: sticky;
+    right: -0px;
     border-radius: 10px;
-    right: 0;
     top: 0;
     z-index: 1;
-    pointer-events: none; 
     cursor: pointer;
 }
 
@@ -109,7 +96,7 @@ body {
     color: white;
 }
 
-.bestSellerCard, .newReleasesCard { /*cambiar esto de max min*/
+.bestSellerCard, .newReleasesCard {
     border-radius: 10px;
     border: 1px solid rgb(218, 218, 218);
     height: 316px;
@@ -133,14 +120,15 @@ body {
     border-top-left-radius: 10px;
 }
 
-
-
 #headerBestSeller, #headerNewReleases {
-    align-items: center;
     display: flex;
+    align-items: center;
     height: 37.8px;
     width: 940.8px;
+    margin-left: 80px;
+    margin-bottom: 20px;
 }
+
 .titleBestSeller, .titleReleasesCard{
     color: var(--color-font);
     
@@ -178,12 +166,9 @@ body {
     height: 169px;
     overflow: auto;
 }
-
 .newReleasesCard .textcard {
     height: 196px;
 }
-
-
 
 .titleDate {
     height: 64px;
@@ -194,7 +179,6 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     position: absolute;
-    
     bottom: 10px;
     left: 16px;
 }
@@ -209,34 +193,33 @@ body {
     display: flex;
     
 }
+.heartContainer{
+    overflow: hidden;
+}
 .heart {
     padding: 0.5rem;
     position: absolute;
     bottom: 10px;
     right: 0px; 
-    /*transition: transform 0.3s ease-out;*/
+    transition: transform 0.3s ease;
+}
+.imagen-hover{
+    visibility: hidden;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 10px;
+    right: 0px; 
+    height: 40px;
+    width: 40px;
 }
 
-/*.heart:hover {
-  transform: scale(1.1); /* Puedes ajustar la escala o cualquier otra transformación según tus necesidades */
+.heartContainer:hover .heart {
+    visibility: hidden;
+}
+.heartContainer:hover .imagen-hover {
+    visibility: visible;
 }
 
-/*.heart:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("imagen2.png"); 
-  background-size: cover;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.heart:hover::before {
-  opacity: 1;
-}*/
 
 .sepCon {
     display: flex;
@@ -302,14 +285,11 @@ body {
 #footnote {
     font-size: 0.75rem;
     font-family: var(--nintendo-font-search);
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     display: flex;
     flex-direction: column;
-     justify-content: center; 
+     justify-content: flex-start; 
+     padding-right: 40px;
+     margin-right: 20px;
 }
 
 .priceBestSeller, .priceReleasesCard {
@@ -331,4 +311,115 @@ body {
 .link:hover {
     color: #AC000D;
     border-bottom-color: rgb(170, 0, 14);
+}
+@media (max-width: 1200px){
+    #bestSellerCards, #newReleasesCards{
+        padding-left: 100px;
+    }
+    #headerBestSeller, #headerNewReleases {
+        margin-left : 60px;
+    }
+}
+@media (max-width: 1025px) {
+    #bestSellerCards, #newReleasesCards{
+        padding-left: 80px;
+    }
+    #headerBestSeller, #headerNewReleases {
+        margin-left : 40px;
+    }
+    #footnote{
+        padding-right: 30px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    #bestSellerCards, #newReleasesCards{
+        padding-left: 60px;
+    }
+    #headerBestSeller, #headerNewReleases {
+        margin-left : 20px;
+    }
+    #bestSellersansNewReleases {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 758px) {
+    #bestSellerCards, #newReleasesCards{
+        padding-left: 30px;
+    }
+    #headerBestSeller, #headerNewReleases {
+        margin-left : 0px;
+    }
+    #bestSellersansNewReleases {
+        margin-left: 20px;
+    }
+    .grayArea{
+        right: -25px;
+    }
+    #footnote{
+        padding-right: 20px;
+        margin-right: 5px;
+    }
+}
+@media (max-width: 550px) {
+    #bestSellersansNewReleases {
+        margin-left: 10px;
+    }
+    .grayArea{
+        right: -36px;
+    }
+}
+@media (max-width: 429px) {
+    .priceNintendo{
+        bottom: 45px;
+    }
+    .heart {
+        bottom: 50px;
+    }
+    #headerNewReleases, #headerBestSeller{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 60px;
+        margin-left: 0;
+        margin-bottom: 80px;
+    }
+    #h1BestSeller, #h1NewReleases {
+        border-right: 0;
+    }
+    #bestSellerCards, #newReleasesCards{
+        padding-left: 20px;
+    }
+    .bestSellerCard, .newReleasesCard {
+        width: 206px;
+        height: 268px;
+    }
+    .textcard{
+        width: 206px;
+        height: 152px;
+        padding: 4px 0 0 8px;
+    }
+
+    
+    .imgCard{
+        width: 206px;
+        height: 116px;
+    }
+    .seeFullList {
+        margin-left: 0;
+        margin-top: -15px;
+    }
+    #bestSellersansNewReleases{
+        margin-left: 5px;
+    }
+    .grayArea{
+        right: -40px;
+        height: 360px;
+    }
+    #footnote{
+        padding-right: 10px;
+        margin-right: 0;
+    }
 }
