@@ -1,138 +1,133 @@
-body {
+*{
     margin: 0;
     padding: 0;
-    font-family: var(--nintendo-font);
-    color: var(--color-font);
-    font-weight: var(--font-weight-nintendo);
-    font-size: var(--font-size-text);
-    line-height: var(--line-text-font);
+}
+.imgFeature{
+    width: 262px;
+    height: 147.25px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 400ms;
 }
 
-div {
-    border-bottom: 1px rgb(218, 218, 218);
+.descriptionTag1{
+    border-radius: 1rem;
+    background-color: #e60012;
+    font-size: 0.75rem;
+    color: white;
+    width: fit-content;
+    padding: 3px 8px;
 }
-
-#lupa {
-    margin-right: 5px;
+.descriptionTag2{
+    border-radius: 1rem;
+    background-color: #4B5CCE;
+    font-size: 0.75rem;
+    color: white;
+    width: fit-content;
+    padding: 3px 8px;
 }
-
-#dropdown:hover, a:hover {
-    color: rgb(230, 0, 18);
+.descriptionTag3{
+    border-radius: 1rem;
+    background-color: #9531B9;
+    font-size: 0.75rem;
+    color: white;
+    width: fit-content;
+    padding: 3px 8px;
 }
-
-#dropdown, #search {
-    border: none;
-    outline: none;
-    align-items: center;
-}
-
-.lensSearch {
-    float: none;
-    border-bottom: 2px rgb(72, 72, 72) solid;
-    display: inline-flex;
-    padding-bottom: 5px;
-    margin-left: 10px;
-}
-
-.lensSearch:hover {
-    color: rgb(230, 0, 18);
-}
-
-i:hover {
-    color: rgb(230, 0, 18); 
-}
-
-#search {
-    text-decoration: none;
-}
-
-.logoNintendo {
-    width: 100%;
-    height: 100%;
-    padding-right: 10px;
-}
-
-a, #dropdown {
-    text-decoration: none;
-    color: rgb(72,72, 72);
-}
-
-.iconFlag {
-    width: 20px;
-    height: 15px;
-    padding-top: 5px;
-    padding-right: 10px;
-    border-radius: 5px;
-}
-
-.logoNintendo {
-    width: 105px;
-    height: 52px;
-}
-
-.leftBlock {
+.item{
+    width: 268px;
+    height: 311.25px;
+    border-radius: 10px;
+    border: 1px solid rgb(218, 218, 218);
+    display: block;
+    margin: 24px;
     display: flex;
-    width: 100%;
-    align-items: center;
-    margin-right: 5px;
+    flex-direction: column;
 }
-
-#dropdown {
-    color: rgb(72, 72, 72, 72);
+.item:hover .imgFeature{
+    transform: translateY(-20px);    
 }
-
-.header1 {
-    display: flex;
-    align-items: center;
+.item:hover .featureResume{
+    color: #e60012;;    
 }
-
-.iconGroup {
-    text-decoration: none;
+.featured{
     display: inline;
-    float: right;
-    padding-right: 10px;
+    flex-direction: row;
 }
-
-.iconSupport, .iconSearch, .iconWish, .iconCart, .iconUser, .iconFlag {
-    padding-left: 15px;
-    padding-top: 5px;
+.allItems{
+    display: inline-flex;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    max-width: 100%;
+    overflow: auto;
 }
-
-#dropdown {
+.featuredText{
+    padding: 16px 0px 16px 16px;
+    display: flex;
+    flex-direction: column;
+}
+.itemFooter{
+margin-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+body{
     font-family: var(--nintendo-font);
     color: var(--color-font);
+    font-size: var(--font-size-text);
     font-weight: var(--font-weight-nintendo);
-    font-size: var(--font-size-text);
-    line-height: var(--line-text-font);
 }
-
-#search{
+.featureType{
     color: var(--color-font);
-    font-size: var(--font-size-text);
+    font-weight: lighter;
+    
 }
-
-.header1 {
-    border-bottom: 1px rgb(218, 218, 218) solid;
-}
-
-.header2 {
-    padding-top: 25px;
-    text-align: center;
-}
-
-#mnStore, #hgGuide, #games1, #nintendoSwitch, #nAndE, #playNintendo {
-    font-family: var(--nintendo-font);
+.featureResume{
     color: var(--color-font);
-    font-weight: var(--font-weight-nintendo);
-    font-size: var(--font-size-text);
-    line-height: var(--line-text-font);
-    border: 0;
+    margin-bottom: 16px;
 }
-
-#mnStore, #hgGuide, #games1, #nintendoSwitch, #nAndE {
-    margin-right: 25px;
+.right{
+    position: absolute;
+    left: 0;
+    height: 350px;
+    color: rgba(255, 255, 255, 0.556);
+    background-color: rgba(57, 57, 57, 0.556);
+    width: 3.5%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: xx-large;
+    cursor: pointer;
 }
-
-.nintendoStar {
-    width: 2%;
+.left{
+    position: absolute;
+    right: 0;
+    height: 350px;
+    color: rgba(255, 255, 255, 0.556);
+    background-color: rgba(57, 57, 57, 0.556);
+    width: 3.5%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: xx-large;
+    cursor: pointer;
+}
+.left:hover{
+    background-color: rgba(57, 57, 57, 0.8);
+    color: white;
+}
+.right:hover{
+    background-color: rgba(57, 57, 57, 0.8);
+    color: white;
+}
+@media (max-width: 1024px) {
+    .item:hover .imgFeature{
+        transform: translateY(0);
+    }
+    .item:hover .featureResume{
+        color: var(--color-font);
+    }
+    button{
+        display: none;
+    }
 }
