@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "museo-sans-700";
+    src: url(fonts/MuseoSans_700.ttf);
+  }
+
+@font-face {
+  font-family: "museo-sans-100";
+  src: url(fonts/MuseoSans-100.otf);
+}
+
+:root{
+  --nintendo-font:"museo-sans-700", -apple-system, BlinkMacSystemFont, sans-serif;
+  --nintendo-font-search:"museo-sans-100", -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-font: rgb(72, 72, 72);
+  --font-weight-nintendo: 700;
+  --font-size-text: 0.875rem;
+  --line-text: 1.4;
+  --border-radius-small-one: 0.5rem;
+}
+
+@media (min-width: 429px) {
+  .myNintendoStoreText, .holidayGiftGuideText, .gamesText, .nintendoSwitchText, .newsAndEventsText, .playNintendoText  {
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+
+  .h2FraseBanner {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.3125rem;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-nintendo);
+    margin: 0px 0px 1em;
+    padding: 0px;
+    letter-spacing: 0px;
+  }
+
+  .botonRojoBanner {
+    height: 3rem;
+    width: auto;
+    padding: 0px 1.5rem;
+    font-size: 1.125rem;
+  }
+
+  h2 {
+    font-size: 1.3125rem;
+  }
+
+  .h2CharactersCharacters {
+    font-size: 1.75rem;
+  }
+
+  .allFootlistFooter1 {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    }
+
+  .aboutNintendoFooter {
+    font-size: 1.125rem;
+  }
+
+  h2 {
+        font-size: 1.3125rem;
+  }
+
+  .aboutNintendoFooter span {
+        font-size: 1.125rem;
+  }
+
+  p, ol, ul {
+        font-size: 1rem;
+  }
+
+  .spanAboutNintendo {
+        font-size: 1rem;
+  }
+
+  .pBarraNegraFooter {
+        font-size: 0.75rem;
+  }
+
+  .pBarraNegraFooter span {
+        display: inline-block;
+  }
+
+  .linkBarraNegraFooter span {
+        font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .fraseSubImgBanner {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .divFraseSubImgBanner {
+    width: 96%;
+    margin: 0px auto;
+  }
+
+  .allContainCharacters {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .allContainCharacters1 {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .allContainCharacters2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .h2CharactersCharacters {
+    grid-column: 1 / span 4;
+  }
+
+  .rrssLogos {
+    width: 100%;
+    grid-template-columns: auto repeat(4, 58px);
+    justify-items: end;
+}
+
+.rrssLogos > :first-child {
+    grid-column: span 1;
+    justify-self: start;
+}
+
+.allFootlistFooter1 {
+    grid-template-columns: repeat(4, 1fr);
+}
+}
+
+@media (max-width: 1024px) {
+  .navStyle {
+    display: none;
+  }
+  
+  .navStyleHidden {
+    display: unset;
+  }
+}
+
+@media (min-width: 1025px) {
+  :root {
+    --border-radius-small: 0.75rem;
+    --border-radius: 1rem; 
+  }
+  
+  .navStyle {
+    display: block;
+  }
+
+  .lensSearchDropdownAll {
+    flex-basis: 28.125rem;
+  }
+
+  .lensSearchDropdown {
+    max-width: 28.125rem;
+    font-size: 0.875rem;
+  }
+
+  #dropdownHeader {
+    display: inline-block;
+  }
+
+  .navStyleHidden {
+    display: none;
+  }
+
+  .fondoBanner {
+    position: absolute;
+    height: calc(100% - 11.4rem);
+  }
+
+  .grupoImgPrincipalBanner {
+    padding-top: 2rem;
+  }
+
+  .responsiveImgBanner {
+    width: 96%;
+  }
+
+  .imgPrincipalBanner1 {
+    border-radius: var(--border-radius);
+    box-shadow: rgba(72, 72, 72, 0.15) 0px 4px 16px 0px;
+  }
+
+  .divFraseSubImgBanner1 {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    justify-items: start;
+    gap: 2rem;
+  }
+
+  .h2FraseBanner {
+    color: rgb(72, 72, 72);
+    text-align: start;
+  }
+
+  .allFootlistFooter1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .divFootlistIcon {
+    grid-template-columns: 1fr auto auto;
+  } 
+
+  .linkIconFooter {
+    grid-column: span 3;
+    justify-self: end;
+  }
+
+  .barraNegraFooter {
+    padding: 2rem 1rem;
+  }
+
+  .pBarraNegraFooter {
+    max-width: unset;
+    text-align: left;
+  }
+
+  .pBarraNegraFooter span {
+    display: inline;
+  }
+
+  .infoBarraNegraFooter {
+    justify-content: start;
+    -webkit-box-pack: start;
+  }
+}
+
+@media (min-width: 1440px) {
+  .allFootlistFooter1 {
+      grid-template-columns: repeat(6, 1fr);
+      margin-left: -1rem;
+  }
+}

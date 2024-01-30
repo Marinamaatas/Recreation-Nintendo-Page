@@ -176,7 +176,7 @@ a {
 }
 
 @media (min-width: 1025px) {  
-       .fondoBanner {
+    .fondoBanner {
         position: absolute;
         height: calc(100% - 11.4rem);
     }

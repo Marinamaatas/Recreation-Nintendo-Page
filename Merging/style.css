@@ -1,0 +1,1148 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html style {
+    height: var(--app-height);
+}
+
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--nintendo-font);
+    font-size: 16px;
+    line-height: var(--line-text);
+    color: var(--color-font);
+    -webkit-font-smoothing: antialiased;
+}
+
+.navStyle {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header1 {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 52px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 100;
+}
+
+.leftBlock {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.leftBlock:first-child {
+    flex: 1 1 0%;
+}
+
+.logoNintendo1 {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0px;
+    transition: all 200ms ease-in-out 0s;
+}
+
+.logoNintendo1 * {
+    color:inherit
+}
+
+.logoNintendo2 {
+    position: absolute !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    width: 1px !important;
+    height: 1px !important;
+    border: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.logoNintendo {
+    width: 105px;
+    height: 52px;
+    background-color: rgb(230, 0, 18);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: white;
+}
+
+.searchText {
+    font-family: var(--nintendo-font-search);
+}
+
+.lensSearchDropdown {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(72, 72, 72);
+    height: 2.125rem;
+    width: 100%;
+}
+
+.lensSearchDropdown:hover {
+    transition-delay: 200ms;
+    border-bottom: 1px rgb(230, 0, 18) solid;
+}
+
+.lensIcon:hover {
+    transition-delay: 200ms;
+    color: rgb(230, 0, 18);
+}
+
+.lensIcon:hover .lensIcon1 {
+    transition-delay: 200ms;
+    color: rgb(230, 0, 18);
+}
+
+.dropdownAllCategories.dropdownAllCategories.dropdownAllCategories:hover .dropdownAllCategories2  {
+    transition-delay: 200ms;
+    color: rgb(230, 0, 18);
+}
+
+.dropdownAllCategories.dropdownAllCategories.dropdownAllCategories:hover .arrowDropdown1 {
+    transition: transform 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+    color: rgb(230, 0, 18);
+}
+
+.lensSearch {
+    width: 100%;
+}
+
+.lensIcon:hover .lensSearch, .lensSearch:hover .searchText::placeholder {
+    transition-delay: 200ms;
+    color: rgb(230, 0, 18);
+}
+
+.lensSearch:hover .searchText::placeholder{
+    transition-delay: 200ms;
+    color: rgb(230, 0, 18);
+}
+
+.lensIcon {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 0%;
+    background: none;
+    border: none;
+    color: rgb(114, 114, 114);
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    line-height: 1.5;
+    padding: 0px;
+    transition: color 200ms ease-in-out 25ms;
+}
+
+.lensIcon1 {
+    color: rgb(72, 72, 72);
+    transition: color 200ms ease-in-out 25ms;
+}
+
+button {
+    color: inherit;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    appearance: button;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1;
+    margin: 0px;
+}
+
+.lensIcon span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.lensSearchDropdown svg {
+    margin-right: 10px;
+}
+
+.spanDropdown {
+    z-index: 9999;
+    border: 0;
+    clip-path: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+}
+
+#dropdownHeader {
+    flex-basis: 140px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.dropdownAllCategories {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: default;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    min-height: 38px;
+    outline: 0!important;
+    position: relative;
+    -webkit-transition: all 100ms;
+    transition: all 100ms;
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 80%);
+    border-radius: var(--border-radius);
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 700;
+    min-height: fit-content;
+}
+
+.dropdownAllCategories1{
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: grid;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    overflow: hidden;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    padding: 0.125rem 0.25rem 0.125rem 0.5rem;
+}
+
+.dropdownAllCategories2 {
+    grid-area: 1/1/2/3;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: hsl(0, 0%, 20%);
+    margin-left: 2px;
+    margin-right: 2px;
+    box-sizing: border-box;
+    color: rgb(72, 72, 72);
+    margin-left: 0px;
+    transition: color 200ms ease-in-out 25ms;
+}
+
+.dropdownAllCategories3 {
+    background: 0;
+    border: 0;
+    caret-color: transparent;
+    font-size: inherit;
+    grid-area: 1/1/2/3;
+    outline: 0;
+    padding: 0;
+    width: 1px;
+    color: transparent;
+    left: -100px;
+    opacity: 0;
+    position: relative;
+    -webkit-transform: scale(.01);
+    -moz-transform: scale(.01);
+    -ms-transform: scale(.01);
+    transform: scale(.01);
+}
+
+
+.arrowDropdown {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.arrowDropdown1 {
+    color: rgb(72, 72, 72);
+    margin-right: 0.5rem;
+    transition-property: transform, color;
+    transition-delay: 25ms;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.leftBlock + .iconGroup {
+    flex-shrink: 0;
+}
+
+.iconGroup {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 1.75rem;
+    padding: 0px 1.25rem;
+}
+
+.iconGroup svg {
+    color: inherit;
+}
+
+.supportList, .wishList, .cartList, .userList, .hiddenLogoNintendo, .hiddenFlagUSA1, .hiddenMenuButton, .hiddenWishListButton, .hiddenCartButton, .hiddenAccountButton {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0px;
+    transition: all 200ms ease-in-out 0s;
+}
+
+.supportIcon, .wishIcon, .userIcon {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px 0.375rem 0px 0px;
+}
+
+
+.supportList, .wishList, .cartList, .userList {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+}
+
+.supportText, .wishText, .cartText, .userText {
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.cartIcon1 {
+    display: inline-flex;
+    margin: 0px 0.5rem 0px 0px;
+}
+
+.cartIcon {
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    color: inherit;
+}
+
+.flagList {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.supportList:hover, .wishList:hover, .cartList:hover, .userList:hover {
+    color: rgb(230, 0, 18);
+}
+
+.iconFlag {
+    border-radius: 0.25rem;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+.iconFlag img {
+    display: block;
+}
+
+
+.supportList:hover, .wishList:hover, .cartList:hover, .userList:hover {
+    color: rgb(230, 0, 18);
+}
+
+.header2 {
+    position: relative;
+}
+
+.totalGroup2Header1 * {
+    color:inherit
+}
+
+.totalGroup2Header {
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 44px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.totalGroup2Header1 {
+    display: flex;
+    gap: 1rem;
+    padding: 2px 0px 0px;
+}
+
+.group1Subheader, .group2Subheader, .group3Subheader, .group4Subheader, .group5Subheader, .group6Subheader {
+    position: relative;
+    padding: 0.75rem;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 200ms ease-in-out 0s;
+}
+
+.group1Subheader .group2Subheader .group3Subheader .group4Subheader .group5Subheader .group6Subheader  * {
+    color: inherit;
+}
+
+.marioNintendoIcon, .snowflakeIcon, .directionalArrowsIcon, .joyConIcon, .newsAndEventsIcon, .starNintendoIcon {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px 0.375rem 0px 0px;
+}
+
+.arrowMNS, .arrowGames, .arrowNintendoSwitch, .arrowStarNintendo {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 1px 0px 0px 0.5rem;
+}
+
+.arrowMNS .arrowGames .arrowNintendoSwitch .arrowStarNintendo svg {
+    transition: transform 200ms ease-in-out 0s;
+}
+
+.totalGroup2Header2 {
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    width: 100%;
+    z-index: 50;
+    background-color: rgb(255, 255, 255);
+    height: 0px;
+    overflow: hidden;
+    transition: height 200ms ease-in-out 0s;
+}
+
+.totalGroup2Header2Dos {
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.totalGroup2Header2Tres1 {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+}
+
+.totalGroup2Header2Tres1Uno {
+    width: 1.625rem;
+    height: 1.625rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: rgb(200, 200, 200);
+    padding: 0px;
+    transition: color 200ms ease-in-out 0s;
+}
+
+.totalGroup2Header2Tres2 {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 1.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1440px;
+    min-width: calc(1025px - 2rem);
+    margin: 0px auto;
+}
+
+.group1Subheader:hover, .group2Subheader:hover, .group3Subheader:hover, .group4Subheader:hover, .group5Subheader:hover, .group6Subheader:hover {
+    color: rgb(230, 0, 18);
+    transition: all 200ms ease-in-out 0s;
+}
+
+.header3 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms ease 0s;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
+
+.hiddenNavHeader {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 46px;
+    z-index: 1000;
+    background-color: rgb(230, 0, 18);
+    color: rgb(255, 255, 255);
+}
+
+.hiddenFlagUSA {
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.hiddenFlagUSA2 {
+    display: block;
+    width: 1.25rem;
+    min-width: 1.25rem;
+    height: 1.25rem;
+    min-height: 1.25rem;
+}
+
+.hiddenFlagUSA3 {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.hiddenFlagUSA4 {
+    border-radius: 0.25rem;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+.hiddenFlagUSA4 img {
+    display: block;
+}
+
+.hiddenNavSubheader {
+    width: 100%;
+    height: calc(58px + 1rem);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.hiddenNavSubheader1 {
+    margin: auto;
+    height: 58px;
+    width: 96%;
+    max-width: 440px;
+}
+
+.hiddenNavSubheader2 {
+    position: relative;
+    height: 58px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25rem 0.5rem 0px;
+}
+
+.hiddenMenuButton, .hiddenWishListButton, .hiddenCartButton, .hiddenAccountButton {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    position: relative;
+    height: 58px;
+}
+
+.hiddenSearchButton {
+    margin-top: -1rem;
+    width: 60px;
+    height: 60px;
+    background: rgb(230, 0, 18);
+    border: none;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.hiddenCartIcon {
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    color: inherit;
+}
+
+.fullContentBanner {
+    position: relative;
+}
+
+.fondoBanner {
+    position: absolute;
+    background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150)) 0% 0% / cover repeat;
+    width: 100%;
+    height: calc(100% - 3.5rem);
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.grupoImgPrincipalBanner {
+    margin: 0px auto;
+}
+
+.imgPrincipalBanner {
+    position: relative;
+    width: 100%;
+}
+
+.responsiveImgBanner {
+    display: block;
+    width: 100%;
+    max-width: 90rem;
+    margin: 0px auto;
+    line-height: 0;
+    min-height: 1px;
+}
+
+.responsiveImgBanner img {
+    height: auto;
+    width: 100%;
+}
+
+.fraseSubImgBanner {
+    position: relative;
+    width: 100%;
+    scroll-margin-top: 120px;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.divFraseSubImgBanner {
+    max-width: 90rem;
+    margin: 0px 1rem;
+}
+
+.divFraseSubImgBanner1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 1rem;
+    -webkit-box-align: center;
+}
+
+.h2FraseBanner {
+    color: rgb(255, 255, 255);
+    font-weight: var(--font-weight-nintendo);
+    line-height: 1.35;
+    font-size: 1.3125rem;
+    margin-block: 0px;
+    text-align: center;
+}
+
+.botonRojoBanner {
+    display: inline-flex;
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px 1.5rem;
+    height: 3rem;
+    width: 100%;
+    border: unset;
+    font-weight: var(--font-weight-nintendo);
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.spanBotonRojoBanner {
+    display: block;
+    position: absolute;
+    background-color: rgb(230, 0, 18);
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    padding: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(230, 0, 18);
+    border-radius: var(--border-radius-small-one);
+    top: 0px;
+    left: 0px;
+    box-sizing: content-box;
+    transform: none;
+    content: "";
+}
+
+.spanBotonRojoBanner1 {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    order: initial;
+    pointer-events: none;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.allContainCharacters {
+    position: relative;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    scroll-margin-top: 120px;
+}
+
+.allContainCharacters1 {
+    max-width: 71.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.allContainCharacters2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.h2CharactersCharacters {
+    grid-column: 1 / span 2;
+    font-size: 1.3125rem;
+    font-weight: var(--font-weight-nintendo);
+    line-height: 1.35rem;
+    margin-block: 0;
+}
+
+.imgPjCharacters1:hover  {
+    transform: scale(1.15);
+    transition-duration: 200ms;
+}
+
+h2 {
+    font-size: 1.125rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-nintendo);
+    letter-spacing: 0px;
+    margin: 0px 0px 1em;
+    padding: 0px;
+}
+
+.divCharactersCharacters {
+    display: flex;
+    flex-direction: column;
+}
+
+.linkCharactersCharacters {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: var(--border-radius);
+}
+
+.imgFondoCharacters {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transform: scale(1.15);
+    transition: transform 200ms ease-in-out 0s;
+}
+
+.imgFondoCharacters1 {
+    display: block;
+    width: 100%;
+    min-height: 1px;
+}
+
+.imgPjCharacters {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: transform 200ms ease-in-out 0s;
+}
+
+.imgPjCharacters1 {
+    display: block;
+    width: 100%;
+    min-height: 1px;
+}
+
+.barraRojaFooter {
+    display: grid;
+    color: rgb(255, 255, 255);
+    background-color: rgb(230, 0, 18);
+    padding: 2.25rem 1rem;
+    place-items: center end;
+    -webkit-box-align: center;
+}
+
+.rrssLogos {
+    display: grid;
+    color: rgb(255, 255, 255);
+    width: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    place-items: center;
+    -webkit-box-align: center;
+}
+
+.rrssLogos {
+    max-width: 90rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.rrssLogos a svg {
+    display: block;
+}
+
+.footlistsFooter {
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 1rem;
+}
+
+.allFootlistFooter {
+    max-width: 90rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.allFootlistFooter1 {
+    display: grid;
+    grid-template-columns: 15.625rem;
+    margin: 1rem auto;
+    row-gap: 2rem;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.divFootlistFooter1:first-child {
+    grid-row: span 2;
+}
+
+.divFootlistFooter1 {
+    border-left: 1px solid rgb(218, 218, 218);
+    padding-left: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-nintendo);
+    margin: 0px 0px 1em;
+    padding: 0px;
+    letter-spacing: 0px;
+}
+
+.aboutNintendoFooter {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.125rem;
+}
+
+.linkAboutFooter, .linkAboutFooter1, .linkBarraNegraFooter {
+    display: inline-block;
+    color: rgb(230, 0, 18);
+    background: transparent;
+    margin: 0px;
+    border: 0px;
+    line-height: var(--line-text);
+    border-radius: var(--border-radius);
+    box-shadow: rgba(172, 0, 13, 0) 0px 0px 0px 4px;
+    transition: box-shadow 200ms ease-in-out 25ms;
+}
+
+.linkAboutFooter:focus-visible, .linkAboutFooter:hover {
+    color: rgb(172, 0, 13);
+}
+
+.linkAboutFooter1:focus-visible, .linkAboutFooter1:hover {
+    color: rgb(172, 0, 13);
+}
+
+.linkAboutFooter:focus-visible, .linkAboutFooter:hover .spanAboutNintendo, .linkBarraNegraFooter:focus-visible, .linkBarraNegraFooter:hover .spanAboutNintendo {
+    border-bottom-color: rgb(172, 0, 13);
+    text-decoration: none;
+}
+
+.linkAboutFooter1:focus-visible, .linkAboutFooter1:hover .spanAboutNintendo {
+    border-bottom-color: rgb(172, 0, 13);
+    text-decoration: none;
+}
+
+.aboutNintendoFooter span {
+    color: rgb(72, 72, 72);
+    border-bottom-color: transparent;
+    font-size: 1rem;
+}
+
+.spanAboutNintendo {
+    position: relative;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding-bottom: 0px;
+    margin: 0px;
+    border-bottom: 2px solid rgb(230, 0, 18);
+    transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+}
+
+.ulAboutFooter {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+p, ol, ul {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+.linkAboutFooter1 {
+    margin-bottom: 0.5rem;
+}
+
+.linkAboutFooter1 span {
+    border-bottom-color: transparent;
+}
+
+.divFootlistFooter2 {
+    grid-row: span 2;
+    border-left: 1px solid rgb(218, 218, 218);
+    padding-left: 1.5rem;
+}
+
+.divFootlistIcon {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 2rem;
+    -webkit-box-align: center;
+}
+
+.linkIconFooter {
+    display: block;
+    grid-column: span 1;
+    max-width: 4rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-self: center;
+}
+
+.svgIconFooter .cls-1 {
+    fill: rgb(255, 255, 255);
+}
+
+.cls-1 {
+    fill: #fff;
+}
+
+.svgIconFooter .cls-2 {
+    fill: rgb(35, 31, 32);
+}
+
+.svgIconFooter .cls-3 {
+    fill: rgb(8, 94, 169);
+}
+
+.svgIconFooter .cls-4 {
+    fill: rgb(21, 16, 17);
+}
+
+.barraNegraFooter {
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 36, 36);
+    padding: 2rem 1rem 114px;
+    text-align: center;
+}
+
+.allBarraNegraFooter {
+    max-width: 90rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pBarraNegraFooter {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.pBarraNegraFooter {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 0.625rem;
+}
+
+.pBarraNegraFooter span {
+    display: block;
+}
+
+.infoBarraNegraFooter {
+    display: inline-flex;
+    gap: 1rem;
+    justify-content: center;
+    -webkit-box-pack: center;
+}
+
+.linkBarraNegraFooter {
+    color: rgb(255, 255, 255);
+}
+
+.linkBarraNegraFooter span {
+    font-size: 0.625rem;
+    border-bottom-color: transparent;
+}
+
+.linkBarraNegraFooter:focus-visible, .linkBarraNegraFooter:hover {
+    color: rgb(255, 255, 255);
+}
+
+.linkFlagTextFooter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.spanFlagFooter {
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.spanFlagFooter img {
+    display: block;
+}
+
+.spanFlagTextFooter {
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    font-size: 0.75rem;
+    font-weight: var(--font-weight-nintendo);
+    line-height: var(--line-text);
+    margin-left: 0.5rem;
+    border-bottom: 2px solid transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+}
+
+.spanFlagTextFooter:focus-visible, .spanFlagTextFooter:hover {
+    border-bottom-color: rgb(255, 255, 255);
+}
