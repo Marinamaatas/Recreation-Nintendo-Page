@@ -161,24 +161,25 @@ html, body {
     transition: color 200ms ease-in-out 25ms;
 }
 
-button {
-    color: inherit;
-}
-
-button, [type="button"], [type="reset"], [type="submit"] {
-    appearance: button;
-}
-
-button, select {
-    text-transform: none;
-}
-
 button, input, optgroup, select, textarea {
     font-family: inherit;
     font-size: 100%;
     line-height: 1;
     margin: 0px;
 }
+
+button, select {
+    text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    appearance: button;
+}
+
+button {
+    color: inherit;
+}
+
 
 .lensIcon span {
     text-overflow: ellipsis;
@@ -756,7 +757,7 @@ button, input, optgroup, select, textarea {
     border-width: 1px;
     border-style: solid;
     border-color: rgb(230, 0, 18);
-    border-radius: var(--border-radius-small-one);
+    border-radius: var(--border-radius-small);
     top: 0px;
     left: 0px;
     box-sizing: content-box;
@@ -774,6 +775,38 @@ button, input, optgroup, select, textarea {
     pointer-events: none;
     -webkit-box-align: center;
     -webkit-box-pack: center;
+}
+
+.lineaBannerFeatured {
+    display: flex;
+    position: relative;
+    max-width: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    flex-wrap: nowrap;
+}
+
+.lineaBannerFeatured1 {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    border-width: 0.0625rem 0px 0px;
+    border-bottom-style: initial;
+    border-bottom-color: initial;
+    border-left-style: initial;
+    border-left-color: initial;
+    border-right-style: initial;
+    border-right-color: initial;
+    border-top-style: solid;
+    border-top-color: rgb(218, 218, 218);
+    z-index: 5;
+}
+
+hr {
+    height: 0px;
+    color: inherit;
 }
 
 .allContainCharacters {
@@ -1146,3 +1179,971 @@ p, ol, ul {
 .spanFlagTextFooter:focus-visible, .spanFlagTextFooter:hover {
     border-bottom-color: rgb(255, 255, 255);
 }
+
+.allBlockFeatured{
+    position: relative;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    scroll-margin-top: 120px;
+}
+
+.titleFeatured {
+    max-width: 90rem;
+    margin: 0px 1rem;
+}
+
+.featuredTitle, .h2OnlineStore, .HeadingNews {
+    font-weight: var(--font-weight-nintendo);
+    line-height: 1.35;
+    font-size: 1.3125rem;
+    margin-block: 0px;
+}
+
+.allItemsFeatured {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.allItemsFeatured1 {
+    position: relative;
+}
+
+.allItemsFeatured2 {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.allItemsFeatured3 {
+    display: flex;
+    justify-content: left;
+    margin-right: 6rem;
+}
+
+.allItemsFeatured3::before, .allItemsFeatured3::after {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    content: "";
+}
+
+.allItemsFeatured4 {
+    width: calc(66.6667% - 0.5rem);
+    min-width: 208px;
+    max-width: 268px;
+    margin: 1rem 0.75rem;
+    box-sizing: content-box;
+    flex-shrink: 0;
+}
+
+.allItemsFeatured4:first-of-type {
+    margin-left: 0px;
+}
+
+.allItemsFeatured4 > div {
+    margin-top: 0px;
+}
+
+.allItemsFeatured5 {
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    max-width: 13rem;
+    border-radius: var(--border-radius);
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 1;
+    flex-basis: 13rem;
+    -webkit-box-pack: end;
+}
+
+.linkFeatured {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: rgb(72, 72, 72);
+    width: 100%;
+    max-width: 13rem;
+    height: 100%;
+    margin-top: 0px;
+    border-radius: var(--border-radius);
+}
+
+.linkFeatured1, .subLinkFeatured1 {
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-width: 1px 1px 0px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: initial;
+    border-top-color: rgb(218, 218, 218);
+    border-right-color: rgb(218, 218, 218);
+    border-left-color: rgb(218, 218, 218);
+    border-image: initial;
+    border-bottom-color: initial;
+    overflow: hidden;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.linkFeatured1Uno {
+    display: block;
+    position: relative;
+}
+
+.linkFeatured1Uno:hover .imgFeatured1 {
+    transform: translateY(-1rem) translateZ(0px);
+    overflow:visible
+}
+
+.linkFeatured1Uno::after {
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    content: "";
+    opacity: 0;
+    transition: opacity 200ms ease-in-out 25ms;
+}
+
+.linkFeatured1Uno1 {
+    width: 100%;
+    max-width: none;
+    overflow: hidden;
+}
+
+.linkFeatured1Uno1Uno, .linkGamingSystems1, .linkNews1One1 {
+    position: relative;
+    width: 100%;
+}
+
+.imgFeatured1, .imgOnlineStore1, .imgGamingSystems1, .imgNews1 {
+    display: block;
+    width: 100%;
+    min-height: 1px;
+}
+
+.linkFeatured1Uno1 img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+    inset: 0px;
+}
+
+.linkFeatured1Uno img {
+    display: block;
+    width: 100%;
+}
+
+.linkFeatured2 {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    border-width: 0px 1px 1px;
+    border-top-style: initial;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-color: rgb(218, 218, 218);
+    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: rgb(218, 218, 218);
+    border-image: initial;
+    border-top-color: initial;
+    padding-top: 1rem;
+    flex-grow: 1;
+    -webkit-box-flex: 1;
+}
+
+.linkFeatured2::before {
+    right: -1px;
+}
+
+.linkFeatured2::after, .linkFeatured2::before {
+    position: absolute;
+    background: rgb(218, 218, 218);
+    height: 16px;
+    width: 1px;
+    top: -16px;
+    content: "";
+}
+
+.linkFeatured2::after {
+    left: -1px;
+}
+
+.fullLetrasFeatured {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px 0.5rem;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+}
+
+.letrasFeatured1 {
+    display: block;
+    position: relative;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.h3LetrasFeatured {
+    display: -webkit-box;
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-nintendo);
+    margin: 0px;
+    overflow: hidden;
+    margin-block: 0px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.letrasFeatured2 {
+    display: -webkit-box;
+    background-color: rgb(230, 0, 18);
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    min-height: 16px;
+    padding: 0px 0.5rem;
+    font-weight: var(--font-weight-nintendo);
+    font-size: 0.625rem;
+    line-height: 16px;
+    align-items: center;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    -webkit-box-align: center;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.letrasFeatured2Dos {
+    display: -webkit-box;
+    background-color: rgb(75, 92, 206);
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    min-height: 16px;
+    padding: 0px 0.5rem;
+    font-weight: var(--font-weight-nintendo);
+    font-size: 0.625rem;
+    line-height: 16px;
+    align-items: center;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    -webkit-box-align: center;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.letrasFeatured3 {
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    min-width: 0.5rem;
+    min-height: 0.5rem;
+}
+
+.letrasFeatured4 {
+    display: grid;
+    grid-template-columns: 1fr 2.5rem;
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.letrasFeatured4Uno {
+    display: flex;
+    font-size: 0.625rem;
+    font-weight: 300;
+    align-items: flex-start;
+}
+
+.letrasFeatured4Uno1 {
+    display: block;
+    background-color: rgb(230, 0, 18);
+    width: 2px;
+    height: 0.875rem;
+    margin-right: 0.25rem;
+}
+
+.subLinkFeatured {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    max-width: 13rem;
+    height: 100%;
+    border-radius: var(--border-radius);
+    left: 0px;
+    bottom: 0px;
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out 0ms;
+}
+
+.subLinkFeatured2 {
+    color: rgb(200, 200, 200);
+    position: relative;
+    width: 100%;
+    animation-name: wRsAg;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.subLinkFeatured2 {
+    margin-bottom: 0.5rem;
+}
+
+.subLinkFeatured3 {
+    display: block;
+    background-color: currentcolor;
+    width: 100%;
+    height: 0px;
+    padding-bottom: calc(56.34% - 2px);
+    border: 1px solid currentcolor;
+}
+
+.subLinkFeatured3 svg {
+    display: block;
+    position: absolute;
+    width: 45.072%;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+.subLinkFeatured3 svg path {
+    fill: rgb(255, 255, 255);
+}
+
+.botonFeatured1 {
+    color: rgb(218, 218, 218);
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    margin: 0px;
+    padding: 1rem;
+    top: 0px;
+    left: 0px;
+    border: none;
+    border-radius: var(--border-radius-small);
+    z-index: 10;
+    outline-offset: -2px;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transform: translateZ(0px);
+    transition: all 200ms ease-in-out 25ms;
+}
+
+.botonFeatured1 svg {
+    display: block;
+    transform-origin: 50% 50%;
+    transition: transform 200ms ease-in-out 25ms;
+}
+
+.botonFeatured2 {
+    color: rgb(218, 218, 218);
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    margin: 0px;
+    padding: 1rem;
+    top: 0px;
+    right: 0px;
+    border: none;
+    border-radius: var(--border-radius-small);
+    z-index: 10;
+    outline-offset: -2px;
+    opacity: 1;
+    pointer-events: none;
+    transform: translateZ(0px);
+    transition: all 200ms ease-in-out 25ms;
+}
+
+.botonFeatured2 svg {
+    display: block;
+    transform-origin: 50% 50%;
+    transition: transform 200ms ease-in-out 25ms;
+}
+
+.allBlockOnlineStore {
+    max-width: 71.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.allBlockOnlineStore1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.linkOnlineStore {
+    width: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.linkOnlineStore1 {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    padding-top: 15.3846%;
+    overflow: hidden;
+}
+
+.linkOnlineStore2 {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.pOnlineStore, .pGamingSystems {
+    min-height: 1rem;
+    margin: 1em 0px;
+}
+
+.textoOnlineStore p {
+    font-size: 1.125rem;
+}
+
+.linkGamingSystems {
+    width: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.textoGamingSystems h1, .textoGamingSystems h2, .textoGamingSystems h3, .textoGamingSystems h4, .textoGamingSystems p {
+    margin: 1em 0px;
+    font-size: 1.125rem;
+}
+
+strong, b {
+    font-weight: var(--font-weight-nintendo);
+}
+
+.allBlockNews {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+
+.allBlockNews1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.divNews1 {
+    grid-column: 1 / span 2;
+  }
+
+  .divNews2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 100%;
+    justify-content: flex-end;
+    border-radius: var(--border-radius);
+    -webkit-box-pack: end;
+}
+
+.linkNews {
+    display: flex;
+    flex-direction: column;
+    color: rgb(72, 72, 72);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    border-radius: var(--border-radius);
+}
+
+.linkNews1 {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    overflow: hidden;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.linkNews1One {
+    display: block;
+    position: relative;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.linkNews1One img {
+    display: block;
+    width: 100%;
+}
+
+.linkNews2 {
+    position: relative;
+    padding-top: 1rem;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    flex-grow: 1;
+    -webkit-box-flex: 1;
+}
+
+.linkNews2Uno {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.pNews {
+    font-family: var(--nintendo-font-search);
+    margin: 0rem 0rem 0.5rem;
+    font-size: var(--font-size-text);
+    font-weight: 300;
+}
+
+.h3News {
+    display: -webkit-box;
+    margin: 0px;
+    font-size: 1rem;
+    font-weight: var(--font-weight-nintendo);
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.pNews1 {
+    display: -webkit-box;
+    font-family: var(--nintendo-font-search);
+    height: calc(2.8em);
+    margin: 0rem 0rem 0.5rem;
+    font-size: var(--font-size-text);
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.readMoreNews {
+    position: relative;
+    color: rgb(230, 0, 18);
+    width: fit-content;
+    padding: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-weight: var(--font-weight-nintendo);
+    border-bottom: 2px solid rgb(230, 0, 18);
+    text-align: left;
+    transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+}
+
+.linkNewsDos {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+    border-radius: var(--border-radius);
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease-in-out 0ms;
+}
+
+.divNews1Dos {
+    grid-column: 1 / span 2;
+}
+
+.h3News1 {
+    display: -webkit-box;
+    margin: 0px;
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-nintendo);
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.botonRojoNews {
+    display: inline-flex;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    position: relative;
+    height: 3rem;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 1.5rem;
+    border: unset;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: var(--font-weight-nintendo);
+    font-size: 1rem;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.spanNews1 {
+    display: block;
+    background-color: rgb(230, 0, 18);
+    position: absolute;
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(230, 0, 18);
+    border-radius: var(--border-radius-small);
+    box-sizing: content-box;
+    content: "";
+}
+
+.botonRojoNews > svg, .botonRojoNews > img {
+    height: 1.125rem;
+    width: auto;
+    margin-left: 0px;
+    margin-right: 1rem;
+    z-index: 1;
+}
+
+.spanTextoNews {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    order: initial;
+    z-index: 1;
+    pointer-events: none;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+#bestSellersansNewReleases {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--nintendo-font);
+    font-size: 16px;
+    line-height: var(--line-text-font);
+    color: var(--color-font);
+    margin-left: 48px; 
+    
+}
+#h1BestSeller, #h1NewReleases {
+    padding: 0px 16px 0px 0px;
+    border-right: 1px solid rgb(218, 218, 218);
+    border-right-width: 0.8px;
+    font-weight: 700;
+    font-size: 28px;
+}
+.seeFullList {
+    text-decoration: none;
+    color: #E60012;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 2px solid rgb(230, 0, 18);
+    margin-left: 16px;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.seeFullList:hover {
+    color: #AC000D;
+    border-bottom-color: rgb(170, 0, 14);
+    
+}
+#bestSellerCards, #newReleasesCards {
+    justify-content: left;
+    display: flex;
+    position: relative;
+    z-index: 0;
+    max-width: fit-content;
+    right: 40px;
+    padding-left: 120px;
+    
+}
+#bestSellerCards {
+    margin-bottom: 50px;
+}
+
+.grayArea {
+    width: 65px;
+    height: 381px;
+    background-color: gray;
+    opacity: 50%;
+    position: absolute;
+    right: -0px;
+    border-radius: 10px;
+    top: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.grayArea::before {
+    content: '>';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(200, 200, 200, 0.7); 
+    font-size: 80px; 
+}
+
+.grayArea:hover {
+    opacity: 80%;
+}
+
+.grayArea:hover::before {
+    color: white;
+}
+
+.bestSellerCard, .newReleasesCard {
+    border-radius: 10px;
+    border: 1px solid rgb(218, 218, 218);
+    height: 316px;
+    width: 262px;
+    margin: 24px;
+    display: block;
+    cursor: pointer;
+}
+#lastBestSellerCard, #lastNewReleasesCard {
+    margin-right: 0;
+}
+
+.newReleasesCard {
+    height: 342px;
+}
+
+.imgCard {
+    width: 262px;
+    height: 147.25px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#headerBestSeller, #headerNewReleases {
+    display: flex;
+    align-items: center;
+    height: 37.8px;
+    width: 940.8px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.titleBestSeller, .titleReleasesCard{
+    color: var(--color-font);
+    
+    text-decoration: none;
+}
+.bestSellerCard:hover .titleBestSeller, .newReleasesCard:hover .titleReleasesCard{
+    color: #e60012;
+    cursor: pointer;
+}
+.bestSellerCard:hover .imgCard, .newReleasesCard:hover .imgCard{
+    transform: translateY(-10px);
+}
+.consoleReleasesCard, .consoleBestSeller {
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-family: var(--nintendo-font-search);
+}
+
+
+.separator {
+    display: block;
+    width: 2px;
+    margin-right: 6px;
+    height: 1rem;
+    background-color: rgb(230, 0, 18);
+}
+
+.textcard {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem 1rem;
+    position: relative;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    height: 169px;
+    overflow: auto;
+}
+.newReleasesCard .textcard {
+    height: 196px;
+}
+
+.titleDate {
+    height: 64px;
+    margin-bottom: 16px;
+}
+.priceNintendo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+}
+.regularPriceReleasesCard{
+    text-decoration: line-through;
+    font-family: var(--nintendo-font-search);
+    font-size: 0.75rem;
+    padding: 0 8px 0 8px;
+    margin: 0;
+}
+.discount {
+    display: flex;
+    
+}
+.heartContainer{
+    overflow: hidden;
+}
+.heart {
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 10px;
+    right: 0px; 
+    transition: transform 0.3s ease;
+}
+
+.imagen-hover{
+    visibility: hidden;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 10px;
+    right: 0px; 
+    height: 40px;
+    width: 40px;
+}
+
+.heartContainer:hover .heart {
+    visibility: hidden;
+}
+
+.heartContainer:hover .imagen-hover {
+    visibility: visible;
+}
+
+.sepCon {
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+.separator, .consoleBestSeller {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.separator, .consoleReleasesCard {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.labelReleasesCard{
+    border-radius: 1rem;
+    padding: 3px 7px 3px 7px;
+    background-color: #e60012;
+    font-size: 0.75rem;
+    color: white;
+    width: fit-content;
+    margin-bottom: 8px;
+    height: 19px;
+}
+
+
+.dateBestSeller {
+    font-weight: 300;
+    /*line-height: 2.35;*/
+    margin-top: 5px;
+    font-size: 0.75rem;
+    
+    font-family: var(--nintendo-font-search);
+}
+
+.discountLabelReleasesCard {
+    padding: 3px 7px 3px 7px;
+    background-color: #e60012;
+    font-size: 0.75rem;
+    color: white;
+    width: fit-content;
+    height: 1.25rem;
+    position: relative;
+}
+
+.discountLabelReleasesCard::before{
+    content: "";
+    background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%207.36%2020%22%3E%20%20%20%20%3Cpath%20d%3D%22M7.369%200v20h-.181c-.558%200-1.094-.222-1.489-.617L.621%2014.305c-.397-.397-.62-.937-.616-1.5l.029-5.627c.003-.553.223-1.082.612-1.474L5.699.621C6.094.224%206.63%200%207.192%200h.177z%22%20fill%3D%22%23e60012%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E) no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    left: -7px;
+    top: 0;
+}
+
+.priceReleasesCard {
+    font-size: 1rem;
+    position: relative;
+}
+
+#footnote {
+    font-size: 0.75rem;
+    font-family: var(--nintendo-font-search);
+    display: flex;
+    flex-direction: column;
+     justify-content: flex-start; 
+     padding-right: 40px;
+     margin-right: 20px;
+}
+
+.priceBestSeller, .priceReleasesCard {
+    margin: 0;
+}
+
+.link {
+    line-height: 2, 35;
+    font-family: var(--nintendo-font);
+    text-decoration: none;
+    color: #E60012;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 2px solid rgb(230, 0, 18);
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+
+.link:hover {
+    color: #AC000D;
+    border-bottom-color: rgb(170, 0, 14);
+}
+
+.gruposBSNR {
+    margin-bottom: 2rem;
+}
+

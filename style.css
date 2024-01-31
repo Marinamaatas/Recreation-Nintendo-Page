@@ -86,7 +86,7 @@ body{
     color: var(--color-font);
     margin-bottom: 16px;
 }
-.right{
+.rightFeatured {
     position: absolute;
     left: 0;
     height: 350px;
@@ -99,7 +99,7 @@ body{
     font-size: xx-large;
     cursor: pointer;
 }
-.left{
+.leftFeatured{
     position: absolute;
     right: 0;
     height: 350px;
@@ -112,11 +112,11 @@ body{
     font-size: xx-large;
     cursor: pointer;
 }
-.left:hover{
+.leftFeatured:hover{
     background-color: rgba(57, 57, 57, 0.8);
     color: white;
 }
-.right:hover{
+.rightFeatured:hover{
     background-color: rgba(57, 57, 57, 0.8);
     color: white;
 }

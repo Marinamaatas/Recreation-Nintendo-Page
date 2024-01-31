@@ -18,13 +18,71 @@
   --border-radius-small-one: 0.5rem;
 }
 
+@media (max-width: 429px) {
+  .priceNintendo{
+      bottom: 45px;
+  }
+
+  .heart {
+      bottom: 50px;
+  }
+
+  #headerNewReleases, #headerBestSeller{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 60px;
+      margin-left: 0;
+      margin-bottom: 80px;
+  }
+
+  #h1BestSeller, #h1NewReleases {
+      border-right: 0;
+  }
+
+  #bestSellerCards, #newReleasesCards{
+      padding-left: 20px;
+  }
+
+  .bestSellerCard, .newReleasesCard {
+      width: 206px;
+      height: 268px;
+  }
+
+  .textcard{
+      width: 206px;
+      height: 152px;
+      padding: 4px 0 0 8px;
+  }
+
+  .imgCard{
+      width: 206px;
+      height: 116px;
+  }
+  .seeFullList {
+      margin-left: 0;
+      margin-top: -15px;
+  }
+  #bestSellersansNewReleases{
+      margin-left: 5px;
+  }
+  .grayArea{
+      right: -40px;
+      height: 360px;
+  }
+  #footnote{
+      padding-right: 10px;
+      margin-right: 0;
+  }
+}
+
 @media (min-width: 429px) {
   .myNintendoStoreText, .holidayGiftGuideText, .gamesText, .nintendoSwitchText, .newsAndEventsText, .playNintendoText  {
     font-size: 0.875rem;
     font-weight: 700;
   }
 
-  .h2FraseBanner {
+  .h2FraseBanner, .h2OnlineStore {
     font-size: 1.75rem;
   }
 
@@ -54,7 +112,7 @@
     font-size: 1.3125rem;
   }
 
-  .h2CharactersCharacters {
+  .h2CharactersCharacters, .featuredTitle, .HeadingNews {
     font-size: 1.75rem;
   }
 
@@ -79,7 +137,7 @@
         font-size: 1rem;
   }
 
-  .spanAboutNintendo {
+  .spanAboutNintendo, .readMoreNews {
         font-size: 1rem;
   }
 
@@ -94,6 +152,114 @@
   .linkBarraNegraFooter span {
         font-size: 0.75rem;
   }
+
+  .allItemsFeatured4 {
+    width: calc(66.6667% - 0.666667rem);
+    margin: 1.5rem 1rem;
+  }
+  
+  .allItemsFeatured5 {
+    flex-basis: 16.375rem;
+  }
+
+  .allItemsFeatured5 {
+    max-width: 16.375rem;
+  }
+
+  .linkFeatured {
+      max-width: 16.375rem;
+  }
+
+  .fullLetrasFeatured {
+    padding: 0px 1rem;
+  }
+
+  .letrasFeatured1, .letrasFeatured4 {
+    margin-bottom: 1rem;
+  }
+
+  .h3LetrasFeatured, .h3News1 {
+    font-size: 1rem;
+    margin: 0px;
+  }
+
+  .letrasFeatured2, .letrasFeatured2Dos {
+    font-size: 0.75rem;
+    line-height: 19px;
+    min-height: 19px;
+  }
+
+  .letrasFeatured4Uno {
+    font-size: 0.875rem;
+  }
+
+  .letrasFeatured4Uno1 {
+    height: 1rem;
+    margin-right: 0.375rem;
+    transform: translateY(2px);
+  }
+
+  .subLinkFeatured {
+    max-width: 16.375rem;
+  }
+
+  .subLinkFeatured2 {
+    margin-bottom: 1rem;
+  }
+
+  .pNews, .pNews1 {
+    margin: 0rem 0rem 1rem;
+    font-size: 1rem;
+  }
+
+  .h3News {
+    font-size: 1.125rem;
+    margin: 0px;
+}
+
+.botonRojoNews {
+  width: auto;
+  height: 3rem;
+  padding: 0px 1.5rem;
+  font-size: 1.125rem;
+}
+
+.botonRojoNews > svg, .botonRojoNews > img {
+  height: 1.25rem;
+}
+}
+
+@media (max-width: 758px) {
+  #bestSellerCards, #newReleasesCards{
+      padding-left: 30px;
+  }
+
+  #headerBestSeller, #headerNewReleases {
+      margin-left : 0px;
+  }
+
+  #bestSellersansNewReleases {
+      margin-left: 20px;
+  }
+
+  .grayArea{
+      right: -25px;
+  }
+
+  #footnote{
+      padding-right: 20px;
+      margin-right: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  #bestSellersansNewReleases {
+      margin-left: 10px;
+  }
+  
+  .grayArea{
+      right: -36px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -107,12 +273,12 @@
     margin: 0px auto;
   }
 
-  .allContainCharacters {
+  .allContainCharacters, .allBlockFeatured {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 
-  .allContainCharacters1 {
+  .allContainCharacters1, .titleFeatured, .allBlockOnlineStore {
     width: 96%;
     margin-left: auto;
     margin-right: auto;
@@ -140,6 +306,46 @@
 .allFootlistFooter1 {
     grid-template-columns: repeat(4, 1fr);
 }
+
+.allItemsFeatured3::before, .allItemsFeatured3::after {
+  width: 2rem;
+}
+
+.allItemsFeatured4  {
+  width: calc(40% - 0.4rem);
+}
+
+.textoOnlineStore p {
+  font-size: 1.3125rem;
+}
+
+.textoGamingSystems h1, .textoGamingSystems h2, .textoGamingSystems h3, .textoGamingSystems h4, .textoGamingSystems p {
+  font-size: 1.3125rem;
+}
+
+.allBlockNews1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.divNews1Dos {
+  grid-column: 3 / span 2;
+}
+}
+
+@media (max-width: 850px) {
+  #bestSellerCards, #newReleasesCards{
+      padding-left: 60px;
+  }
+  
+  #headerBestSeller, #headerNewReleases {
+      margin-left : 20px;
+  }
+
+  #bestSellersansNewReleases {
+      margin-left: 40px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -150,6 +356,16 @@
   .navStyleHidden {
     display: unset;
   }
+
+  .item:hover .imgFeature{
+    transform: translateY(0);
+  }
+  .item:hover .featureResume{
+    color: var(--color-font);
+  }
+button{
+    display: none;
+}
 }
 
 @media (min-width: 1025px) {
@@ -239,6 +455,49 @@
     justify-content: start;
     -webkit-box-pack: start;
   }
+
+  .allItemsFeatured4 {
+    width: calc(28.5714% - 0.285714rem);
+  }
+
+  .allBlockOnlineStore1 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+    gap: 2rem;
+  }
+
+  .h2OnlineStore, .linkOnlineStore, .linkGamingSystems, .divNews1 {
+    grid-column: 1 / span 2;
+  }
+  
+  .allBlockNews {
+    display: grid;
+    justify-items: start;
+    gap: 2rem;
+}
+
+#bestSellerCards, #newReleasesCards{
+  padding-left: 80px;
+}
+
+#headerBestSeller, #headerNewReleases {
+  margin-left : 40px;
+}
+
+#footnote{
+  padding-right: 30px;
+  margin-right: 10px;
+}
+}
+
+@media (max-width: 1200px){
+  #bestSellerCards, #newReleasesCards{
+      padding-left: 100px;
+  }
+  #headerBestSeller, #headerNewReleases {
+      margin-left : 60px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -247,3 +506,16 @@
       margin-left: -1rem;
   }
 }
+
+@supports (aspect-ratio: 16 / 9) {
+  .linkFeatured1Uno1 {
+      aspect-ratio: 16 / 9;
+  }
+
+  .linkFeatured1Uno1 img {
+    position: relative;
+}
+}
+
+
+
